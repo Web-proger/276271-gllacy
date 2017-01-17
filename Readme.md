@@ -1,6 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Иван Тарасов](https://up.htmlacademy.ru/htmlcss/16/user/276271).
+* Наставник: [Евгений Болтян](https://up.htmlacademy.ru/htmlcss/16/user/83202).
 
 ---
 
