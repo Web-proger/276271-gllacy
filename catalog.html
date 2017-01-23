@@ -40,24 +40,71 @@
                 <p class="phone">8 812 450-25-25</p>
             </div>
         </div>
-
+        <h1 class="icecream-type">Сливочное мороженое</h1>
+        
         <!-- Сортировка морженного -->
         <section class="sorting">
-            <h1 class="icecream-type">Сливочное мороженое</h1>
-            <form action="#" method="post">
-                <select name="" id="">
-                    <option value="">По популярности</option>
-                </select>
+            <form action="#" method="post" oninput="outprice.value=inprice.value">
+                <div class="sorting-type">
+                    <span>Сортировка:</span>
+                    <select name="sorting-type">
+                        <option value="popularity">По популярности</option>
+                    </select> 
+                </div>
+                <div class="sorting-price">
+                    <span>Цена: 100 руб. – 500 руб.</span>
+                    <!-- пока не знаю как сделать диапозон, как вариант 2 span или через 2 input text задавать диапозон-->
+                    <input type="range" min="100" max="500" step="1" name="inprice" id="inprice">
+                    <output name="outprice">200</output>
+                </div>
+                <!-- Сортировка по жирности -->
+                <fieldset class="sorting-fatness">
+                    <legend>Жирность:</legend>
+                    <label>
+                        <input type="radio" name="fatness" value="fat0">
+                        0%
+                    </label>
+                    <label>
+                        <input type="radio" name="fatness" value="fat10" checked>
+                        до 10%
+                    </label>
+                    <label>
+                        <input type="radio" name="fatness" value="fat30">
+                        до 30%
+                    </label>
+                    <label>
+                        <input type="radio" name="fatness" value="fat-more">
+                        выше 30%
+                    </label>
+                </fieldset>
+                <!-- Сортировка по наполнителю -->
+                <fieldset class="sorting-filler">
+                    <legend>Наполнители:</legend>
+                    <label>
+                        <input type="checkbox" name="chocolate" checked>
+                        шоколадные
+                    </label>
+                    <label>
+                        <input type="checkbox" name="sugar" checked>
+                        сахарные присыпки
+                    </label>
+                    <label>
+                        <input type="checkbox" name="fruit">
+                        фрукты
+                    </label>
+                    <label>
+                        <input type="checkbox" name="syrup">
+                        сиропы
+                    </label>
+                    <label>
+                        <input type="checkbox" name="jam">
+                        джемы
+                    </label>
+                </fieldset>
+                <button type="submit">Применить</button>
             </form>
         </section>
  
-<!-- тексты
-Сортировка:  Цена: 100 руб. – 500 руб.    Жирность
-по популярности 
-Наполнители:
-шоколадные  сахарные присыпки   фрукты  сиропы  джемы   Применить
--->
-
         <!-- Каталог мароженного -->
         <div class="catalog-icecream">
             <div class="icecream-item">
@@ -122,11 +169,11 @@
             </div>
         </div>
         <div class="pagination">
-            <strong><a href="#">1</a></strong>
-            <strong><a href="#">2</a></strong>
-            <strong><a href="#">3</a></strong>
-            <strong><a href="#">4</a></strong>
-            <strong><a href="#">5</a></strong>
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
         </div>
         </main>
 
