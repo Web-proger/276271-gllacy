@@ -8,7 +8,7 @@
   <body>
     <!--<p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>-->
     <!-- Шапка сайта -->
-    <header class="main-header">
+    <header class="main-header container clearfix">
     	<img class="logo" src="img/logo-gllacy.png" alt="Логотип Глэйси" width="154" height="64">
     	<nav class="main-menu">
     		<ul>
@@ -19,14 +19,14 @@
     	</nav>
     	<div class="user-block">
 	    	<a class="search" href="#">Поиск</a>
-	+    	<a class="entry-menu" href="#">Вход</a>
+	    	<a class="entry-menu" href="#">Вход</a>
 	    	<a class="cart" href="#">Пусто</a>
     	</div>
     </header>
 
 
     <!-- Основной контент -->
-    <main>
+    <main class="container">
         <!-- Слайдер. Пока с 1ой страницей -->
         <!-- Время и телефон видимо абсолюно позиционировны -->
     	<div class="slider">
@@ -44,7 +44,7 @@
     	</div>
 
         <!-- Промо блок -->
-        <section class="promo">
+        <section class="promo clearfix">
             <div class="promo-left">
                 <p><strong>Малинка даром!</strong></p>
                 <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
@@ -83,7 +83,7 @@
 
         <!-- Блок магазин и его преимущества -->
         <article class="features">
-            <p>Магазин Глейси — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</p>
+            <h3>Магазин Глейси — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h3>
             <div class="features-item">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</div>
             <div class="features-item">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</div>
             <div class="features-item">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</div>
@@ -91,7 +91,7 @@
         </article>
 
         <!-- Блог и подписка на рассылку -->
-        <section class="blog-subscribe">
+        <section class="blog-subscribe clearfix">
             <div class="blog">
                 <p class="blog-news">Новое в нашем блоге</p>
                 <p class="blog-caption"><a href="#">10  способов сервировки фруктовых щербетов к столу</a></p>
@@ -125,14 +125,14 @@
 
 
         <!-- Подвал сайта -->
-        <footer class="main-footer">
-            <div class="social">
+        <footer class="main-footer container clearfix">
+            <div class="footer-social">
                 <a href="#">Твиттер</a>
                 <a href="#">Инстаграм</a>
                 <a href="#">Фейсбук</a>
                 <a href="#">Вконтакте</a>
             </div>
-            <div class="footer-info">
+            <div class="footer-info clearfix">
                 <div class="footer-info-left">
                     <p><a href="#">Для поставщиков</a></p>
                     <p><a href="#">О производстве</a></p>
@@ -142,7 +142,7 @@
                     <p><a href="#">Экологические стандарты</a></p>
                 </div>
             </div>
-            <div class="copyright">
+            <div class="footer-copyright">
                 <img class="developer-logo" src="img/logo_coperight.png" alt="" width="108" height="38">
                 <p>Сделано в <a href="#">HTML Academy</a>  © 2017</p>
             </div>
