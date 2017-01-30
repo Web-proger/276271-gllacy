@@ -38,6 +38,7 @@ h2 {
 /*** Шапка (header) ***/
 .logo {
 	float: left;
+	margin-right: 26px;
 	background-color: grey; /*временно*/
 }
 
@@ -51,6 +52,11 @@ h2 {
 /*** breadcrumbs  ***/
 
 /*** Подвал (footer) ***/
+.main-footer {
+	padding-top: 35px;
+	padding-bottom: 35px;
+}
+
 .footer-social {
 	float: left;
 	width: 267px;
@@ -105,6 +111,7 @@ h2 {
 	width: 267px;
 	margin-left: -5px;
 	margin-right: 26px;
+	vertical-align: top;
 }
 
 .best-icecream-item:first-child {
@@ -115,10 +122,29 @@ h2 {
 	margin-right: 0px;
 }
 
+.features {
+	padding: 30px 20px;
+	margin-bottom: 40px;
+}
+
 .features-item {
 	display: inline-block;
 	width: 540px;
 }
+
+.features-item:nth-child(even) {
+	margin-right: 26px;
+}
+
+/* -- убираем пробелы inline-block */
+.features-item:nth-child(odd) {
+	margin-left: -5px;
+}
+
+.blog-subscribe {
+	margin-bottom: 40px;
+}
+
 
 .blog {
 	float: left;
@@ -136,11 +162,6 @@ h2 {
 	margin-left: -27px;
 }
 
-
-
-
-
-
 	/*-- catalog.html (Каталог) --*/
 .breadcrumbs {
 	float: left;
@@ -151,6 +172,10 @@ h2 {
 	float: right;
 	width: 267px;
 	text-align: right;
+}
+
+.sorting {
+	margin-bottom: 40px;
 }
 
 .icecream-item {
@@ -170,6 +195,8 @@ h2 {
 }
 
 .pagination {
+	padding-top: 80px;
+	padding-bottom: 30px;
 	text-align: right;
 }
 
@@ -184,7 +211,7 @@ h2 {
 
 
 /***** - Для тестирования - *****/
-/**Ободка главных модулей**/
+/***--Ободка главных модулей--***/
 header,
 main,
 footer {
