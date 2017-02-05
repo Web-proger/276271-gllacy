@@ -18,6 +18,12 @@ h2 {
 	/*h2 в разметке отсутствует*/
 }
 
+/*** Clearfix ***/
+.clearfix::after {
+	content: "";
+	display: table;
+	clear: both;
+}
 
 /***** 2. Сетка *****/
 	/*-- Общее --*/
@@ -30,65 +36,49 @@ h2 {
 }
 
 /*** Шапка (header) ***/
-.main-header {
-	display: flex;
-	align-items: flex-start;
-}
-
 .logo {
-	margin-right: 11px;
+	float: left;
+	margin-right: 26px;
 	background-color: grey; /*временно*/
 }
 
-.main-menu ul {
-	display: flex;
-	list-style: none;
-}
-
-.main-menu li {
-	margin-right: 28px;
+.main-menu {
+	float: left;
 }
 
 .user-block {
-	padding: 16px;
-	margin-left: auto;
-
+	float: right;
 }
 /*** breadcrumbs  ***/
-.content-header {
-	display: flex;
-	justify-content: space-between;
-	align-items: flex-end;
-}
-
-.breadcrumbs-navigation {
-	display: flex;
-	list-style: none;
-}
-
-.breadcrumbs-navigation li {
-	padding-right: 22px;
-}
 
 /*** Подвал (footer) ***/
 .main-footer {
-	display: flex;
-	justify-content: space-between;
 	padding-top: 35px;
-	padding-bottom: 30px;
+	padding-bottom: 35px;
 }
 
 .footer-social {
+	float: left;
 	width: 267px;
+	margin-right: 133px;
 }
 
 .footer-info {
-	display: flex;
-	justify-content: space-between;
+	float: left;
 }
 
 .footer-copyright {
+	float: right;
 	width: 267px;
+}
+
+.footer-info-left {
+	float: left;
+	margin-right: 32px;
+}
+
+.footer-info-right {
+	float: right;
 }
 
 
@@ -99,58 +89,73 @@ h2 {
 }
 
 .promo {
-	display: flex;
-	justify-content: space-between;
 	margin-bottom: 40px;
 }
 
-.promo-left,
-.promo-right  {
+.promo-left {
+	float: left;
+	width: 560px;
+}
+
+.promo-right {
+	float: right;
 	width: 560px;
 }
 
 .best-icecream {
-	display: flex;
-	justify-content: space-between;
-	margin-bottom: 40px;
+	margin-bottom: 40px;	
 }
 
 .best-icecream-item {
+	display: inline-block;
 	width: 267px;
+	margin-left: -5px;
+	margin-right: 26px;
+	vertical-align: top;
+}
+
+.best-icecream-item:first-child {
+	margin-left: 0;
+}
+
+.best-icecream-item:last-child {
+	margin-right: 0px;
 }
 
 .features {
-	display: flex;
-	flex-wrap: wrap;
-	padding: 35px 20px;
+	padding: 30px 20px;
 	margin-bottom: 40px;
 }
 
 .features-item {
-	box-sizing: border-box;
+	display: inline-block;
 	width: 540px;
-	padding-top: 18px;
-	padding-left: 55px;
-	margin-bottom: 15px;
+}
+
+.features-item:nth-child(even) {
 	margin-right: 26px;
 }
 
+/* -- убираем пробелы inline-block */
 .features-item:nth-child(odd) {
-	margin-right: 0;
+	margin-left: -5px;
 }
 
 .blog-subscribe {
-	display: flex;
-	justify-content: space-between;
 	margin-bottom: 40px;
 }
 
+
 .blog {
+	float: left;
 	width: 560px;
+	min-height: 220px;
 }
 
 .subscribe {
+	float: right;
 	width: 560px;
+	min-height: 220px;
 }
 
 .map {
@@ -159,33 +164,39 @@ h2 {
 
 	/*-- catalog.html (Каталог) --*/
 .breadcrumbs {
+	float: left;
 	width: 560px;
 }
 
 .shedule-phone {
+	float: right;
 	width: 267px;
+	text-align: right;
 }
 
-.sorting form {
-	display: flex;
-	flex-wrap: wrap;
-}
-
-.sorting-type {
-	width: 194px;
-}
-
-.catalog-icecream {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
+.sorting {
+	margin-bottom: 40px;
 }
 
 .icecream-item {
+	display: inline-block;
 	width: 267px;
+	margin-left: -5px;
+	margin-right: 26px;
+	vertical-align: top;
+}
+
+.icecream-item:nth-child(4n+1) {
+	margin-left: 0;
+}
+
+.icecream-item:nth-child(4n) {
+	margin-right: 0px;
 }
 
 .pagination {
+	padding-top: 80px;
+	padding-bottom: 30px;
 	text-align: right;
 }
 
