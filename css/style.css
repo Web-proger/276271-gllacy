@@ -243,3 +243,95 @@ footer {
 .shedule-phone {
 	outline: 1px solid pink;
 }
+
+/*sprite temp
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-blogin-ico {
+    width: 21px;
+    height: 19px;
+    background-position: -10px -10px;
+}
+
+.sprite-bsearch-ico {
+    width: 17px;
+    height: 17px;
+    background-position: -51px -10px;
+}
+
+.sprite-cart {
+    width: 21px;
+    height: 20px;
+    background-position: -88px -10px;
+}
+
+.sprite-cart-full {
+    width: 21px;
+    height: 20px;
+    background-position: -129px -10px;
+}
+
+.sprite-cow-ico {
+    width: 48px;
+    height: 49px;
+    background-position: -10px -50px;
+}
+
+.sprite-fb-ico {
+    width: 32px;
+    height: 32px;
+    background-position: -78px -50px;
+}
+
+.sprite-icacream-ico {
+    width: 49px;
+    height: 49px;
+    background-position: -130px -50px;
+}
+
+.sprite-inst-ico {
+    width: 32px;
+    height: 32px;
+    background-position: -10px -119px;
+}
+
+.sprite-leaf-ico {
+    width: 49px;
+    height: 49px;
+    background-position: -62px -119px;
+}
+
+.sprite-termometr-ico {
+    width: 48px;
+    height: 49px;
+    background-position: -131px -119px;
+}
+
+.sprite-tw-ico {
+    width: 32px;
+    height: 32px;
+    background-position: -199px -10px;
+}
+
+.sprite-vk-ico {
+    width: 32px;
+    height: 32px;
+    background-position: -199px -62px;
+}
+
+.sprite-wlogin-ico {
+    width: 21px;
+    height: 19px;
+    background-position: -199px -114px;
+}
+
+.sprite-wsearch-ico {
+    width: 17px;
+    height: 17px;
+    background-position: -199px -153px;
+}
+*/
