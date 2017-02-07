@@ -6,6 +6,7 @@ body {
 	line-height: 22px;
 	font-weight: 400;
 	color: black; /*#ffffff*/
+	background-color: #849d8f;
 }
 
 h1 {
@@ -33,6 +34,7 @@ h2 {
 .main-header {
 	display: flex;
 	align-items: flex-start;
+	padding-top: 9px;
 }
 
 .logo {
