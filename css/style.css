@@ -38,23 +38,47 @@ h2 {
 }
 
 .logo {
-	margin-right: 11px;
 	background-color: grey; /*временно*/
+}
+
+.logo-link {
+	margin-right: 27px;	
 }
 
 .main-menu ul {
 	display: flex;
 	list-style: none;
+	padding: 0;
 }
 
 .main-menu li {
-	margin-right: 28px;
+	/*margin-right: 27px;*/
 }
+
+.main-menu a,
+.user-block a {
+	display: inline-block;
+	vertical-align: top;
+	font-size: 16px;
+	line-height: 18px;
+	padding: 7px 14px;
+	color: #ffffff;
+}
+
+.menu-active {
+	background-color: #d07058;
+	border-radius: 13px;
+}
+
 
 .user-block {
 	padding: 16px;
 	margin-left: auto;
+}
 
+.user-block a {
+	background-color: rgba(255, 255,255, 0.2);
+	border-radius: 13px;
 }
 /*** breadcrumbs  ***/
 .content-header {
@@ -97,7 +121,16 @@ h2 {
 /*** Основной контент (main) ***/
 	/*-- index.html (главная) --*/
 .slider {
+	height: 535px;
 	margin-bottom: 40px;
+	position: relative;
+}
+
+.slider-img {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left: -323px;
 }
 
 .promo {
@@ -165,6 +198,9 @@ h2 {
 }
 
 .shedule-phone {
+	position: absolute;
+	top: 0;
+	right: 0;
 	width: 267px;
 }
 
