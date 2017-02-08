@@ -42,7 +42,7 @@ h2 {
 }
 
 .logo-link {
-	margin-right: 27px;	
+	margin-right: 11px;	
 }
 
 .main-menu ul {
@@ -59,8 +59,10 @@ h2 {
 .user-block a {
 	display: inline-block;
 	vertical-align: top;
+	margin-right: 10px;
 	font-size: 16px;
 	line-height: 18px;
+	font-weight: 700;
 	padding: 7px 14px;
 	color: #ffffff;
 }
@@ -73,13 +75,89 @@ h2 {
 
 .user-block {
 	padding: 16px;
+	padding-right: 0;
 	margin-left: auto;
 }
 
 .user-block a {
+	display: inline-block;
+	vertical-align: top;
+	padding: 8px 14px;
 	background-color: rgba(255, 255,255, 0.2);
-	border-radius: 13px;
+	border-radius: 16px;
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: 500;
 }
+
+.user-block .search {
+	position: relative;
+	font-size: 0;
+	padding: 0;
+	width: 32px;
+	height: 32px;
+}
+
+.user-block .entry-menu {
+	position: relative;
+	padding-right: 16px;
+	padding-left: 44px;
+}
+
+.user-block .search:hover,
+.user-block .entry-menu:hover {
+	color: #373737;
+	background-color: #f8f7f4;
+}
+
+.user-block .entry-menu::before {
+	position: absolute;
+	content: "";
+	top: 7px;
+	left: 17px;
+	width: 21px;
+    height: 19px;
+	background: url("../img/sprite-ico.png") no-repeat;
+    background-position: -199px -114px;
+}
+
+.user-block .entry-menu:hover::before {
+    background-position: -10px -10px;	
+}
+
+.user-block .search::before {
+	position: absolute;
+	content: "";
+	top: 8px;
+	left: 8px;
+	width: 17px;
+    height: 17px;	
+	background: url("../img/sprite-ico.png") no-repeat;
+    background-position: -199px -153px;
+}
+
+.user-block .search:hover::before {
+	background-position: -51px -10px;
+}
+
+.user-block .cart {
+	position: relative;
+	padding-right: 34px;
+	padding-left: 45px;
+	margin-right: 0;
+}
+
+.user-block .cart::before {
+	position: absolute;
+	content: "";
+	top: 7px;
+	left: 16px;
+    width: 21px;
+    height: 20px;
+	background: url("../img/sprite-ico.png") no-repeat;
+    background-position: -88px -10px;	
+}
+
 /*** breadcrumbs  ***/
 .content-header {
 	display: flex;
@@ -126,11 +204,63 @@ h2 {
 	position: relative;
 }
 
-.slider-img {
+
+.shedule-phone {
 	position: absolute;
 	top: 0;
+	right: 0;
+	width: 267px;
+	text-align: right;
+	color: #ffffff;
+	font-weight: 700;
+}
+
+.shedule {
+	font-size: 14px;
+	line-height: 16px;
+	margin-top: 0;
+	margin-bottom: 9px;
+}
+
+.phone {
+	font-size: 22px;
+	line-height: 24px;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.slider-img {
+	position: absolute;
+	top: 10px;
 	left: 50%;
 	margin-left: -323px;
+}
+
+.slider-title {
+	position: absolute;
+	width: 794px;
+	top: 260px;
+	left: 177px;
+	text-align: center;
+	color: #ffffff;
+	font-size: 60px;
+	line-height: 60.35px;
+	font-weight: 700;
+}
+
+.slider-btn {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	margin-left: -140px;
+	font-size: 32px;
+	line-height: 44px;
+	font-weight: 700;
+	color: #ffffff;
+	text-decoration: none;
+	padding: 11px 42px;
+	border-radius: 26px 31px 31px 26px;
+	background: #e84c36;
 }
 
 .promo {
@@ -141,7 +271,9 @@ h2 {
 
 .promo-left,
 .promo-right  {
+	box-sizing: border-box;
 	width: 560px;
+	padding: 22px;
 	border-radius: 15px;
 }
 
@@ -153,6 +285,12 @@ h2 {
 .promo-right {
 	min-height: 229px;
 	background: #d2691e url("../img/chocolate-bg.jpg") no-repeat;
+}
+
+.promo strong {
+	font-size: 35px;
+	line-height: 41px;
+	color: #ffffff;
 }
 
 .best-icecream {
@@ -218,13 +356,6 @@ h2 {
 	width: 560px;
 }
 
-.shedule-phone {
-	position: absolute;
-	top: 0;
-	right: 0;
-	width: 267px;
-	text-align: right;
-}
 
 .sorting form {
 	display: flex;
@@ -248,13 +379,6 @@ h2 {
 .pagination {
 	text-align: right;
 }
-
-
-
-
-
-
-
 
 
 
