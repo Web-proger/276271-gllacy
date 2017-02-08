@@ -38,7 +38,7 @@ h2 {
 }
 
 .logo {
-	background-color: grey; /*временно*/
+	
 }
 
 .logo-link {
@@ -142,6 +142,17 @@ h2 {
 .promo-left,
 .promo-right  {
 	width: 560px;
+	border-radius: 15px;
+}
+
+.promo-left {
+	min-height: 229px;
+	background: #dc143c url("../img/raspberries-bg.jpg") no-repeat;
+}
+
+.promo-right {
+	min-height: 229px;
+	background: #d2691e url("../img/chocolate-bg.jpg") no-repeat;
 }
 
 .best-icecream {
@@ -159,6 +170,9 @@ h2 {
 	flex-wrap: wrap;
 	padding: 35px 20px;
 	margin-bottom: 40px;
+	background: #ecdfc3 url("../img/wafer-bg.jpg") no-repeat;
+	border-radius: 15px;
+	min-height: 306px; /*!*/
 }
 
 .features-item {
@@ -180,12 +194,19 @@ h2 {
 	margin-bottom: 40px;
 }
 
-.blog {
+.blog,
+.subscribe {
 	width: 560px;
+	height: 220px;
+	border-radius: 15px;
+}
+
+.blog {
+	background: #ffffff url("../img/blog-bg.jpg");
 }
 
 .subscribe {
-	width: 560px;
+	background: #ffffff url("../img/subscribe-bg.jpg") no-repeat;
 }
 
 .map {
@@ -202,6 +223,7 @@ h2 {
 	top: 0;
 	right: 0;
 	width: 267px;
+	text-align: right;
 }
 
 .sorting form {
