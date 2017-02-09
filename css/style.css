@@ -446,25 +446,47 @@ h2 {
 	margin-right: 0;
 }
 
+/*-Блок- блог и подписка-*/
+
 .blog-subscribe {
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 40px;
 }
 
-/*-Блок- блог и подписка-*/
 .blog,
 .subscribe {
+	box-sizing: border-box;
 	width: 560px;
 	height: 220px;
 	border-radius: 15px;
 }
 
 .blog {
+	padding: 5px 19px;
 	background: #ffffff url("../img/blog-bg.jpg");
 }
 
+.blog-news {
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: 500;
+	color: #323232;
+}
+
+.blog-caption {
+	width: 286px;
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: 700;
+}
+
+.blog-caption a {
+	color: #323232;
+}
+
 .subscribe {
+	padding: 33px 26px;
 	background: #ffffff url("../img/subscribe-bg.jpg") no-repeat;
 }
 
@@ -478,7 +500,9 @@ h2 {
 	position: absolute;
 	right: 27px;
 	top: 67px;
+	box-sizing: border-box;
 	width: 302px;
+	padding: 27px 25px;
 	min-height: 305px;
 	background-color: #ffffff;
 	color: #323232;
