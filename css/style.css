@@ -5,7 +5,7 @@ body {
 	font-size: 16px;
 	line-height: 22px;
 	font-weight: 400;
-	color: black; /*#ffffff*/
+	color: #323232;
 	background-color: #849d8f;
 }
 
@@ -51,12 +51,7 @@ h2 {
 	padding: 0;
 }
 
-.main-menu li {
-	/*margin-right: 27px;*/
-}
-
-.main-menu a,
-.user-block a {
+.main-menu a {
 	display: inline-block;
 	vertical-align: top;
 	margin-right: 10px;
@@ -82,12 +77,15 @@ h2 {
 .user-block a {
 	display: inline-block;
 	vertical-align: top;
+	margin-right: 10px;
 	padding: 8px 14px;
 	background-color: rgba(255, 255,255, 0.2);
 	border-radius: 16px;
 	font-size: 14px;
 	line-height: 16px;
 	font-weight: 500;
+	color: #ffffff;
+	text-decoration: none;
 }
 
 .user-block .search {
@@ -248,6 +246,25 @@ h2 {
 	font-weight: 700;
 }
 
+.btn {
+	display: inline-block;
+	vertical-align: top;
+	font-family: "Roboto", "Arial", sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 700;
+	color: #ffffff;
+	text-decoration: none;
+	background-image: linear-gradient(to top, #e74a35 0%, #f26843 100%);
+	box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+	padding: 11px 23px;
+	border-radius: 23px 20px 20px 23px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+
+}
+
 .slider-btn {
 	position: absolute;
 	bottom: 0;
@@ -255,12 +272,8 @@ h2 {
 	margin-left: -140px;
 	font-size: 32px;
 	line-height: 44px;
-	font-weight: 700;
-	color: #ffffff;
-	text-decoration: none;
 	padding: 11px 42px;
 	border-radius: 26px 31px 31px 26px;
-	background: #e84c36;
 }
 
 .promo {
@@ -271,6 +284,7 @@ h2 {
 
 .promo-left,
 .promo-right  {
+	position: relative;
 	box-sizing: border-box;
 	width: 560px;
 	padding: 22px;
@@ -287,9 +301,24 @@ h2 {
 	background: #d2691e url("../img/chocolate-bg.jpg") no-repeat;
 }
 
+.promo .btn {
+	position: absolute;
+	bottom: 23px;
+	right: 21px;
+}
+
 .promo strong {
+	display: block;
+	margin-bottom: 15px;
 	font-size: 35px;
 	line-height: 41px;
+	color: #ffffff;
+}
+.promo p {
+	margin: 0;
+	font-size: 18px;
+	line-height: 22px;
+	font-weight: 700;
 	color: #ffffff;
 }
 
@@ -303,23 +332,77 @@ h2 {
 	width: 267px;
 }
 
+.best-icecream p {
+	margin: 0;
+	text-align: center;
+}
+
+.best-icecream a {
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: 700;
+	color: #ffffff;
+	text-decoration: none;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2)
+}
+
 .features {
 	display: flex;
 	flex-wrap: wrap;
-	padding: 35px 20px;
+	padding: 24px 20px;
 	margin-bottom: 40px;
 	background: #ecdfc3 url("../img/wafer-bg.jpg") no-repeat;
 	border-radius: 15px;
 	min-height: 306px; /*!*/
 }
 
+.features h3 {
+	margin: 0;
+	width: 999px;
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: 500;
+	color: #323232;
+}
+
 .features-item {
+	position: relative;
 	box-sizing: border-box;
 	width: 540px;
 	padding-top: 18px;
 	padding-left: 55px;
 	margin-bottom: 15px;
 	margin-right: 26px;
+}
+
+/*.features div:last-of-type {
+	background-color: red;
+}*/
+
+.features-item::before {
+	position: absolute;
+	content: "";
+	width: 49px;
+	height: 49px;
+	top: 0;
+	left: 0;
+	background: transparent url("../img/sprite-ico.png") no-repeat;
+}
+
+.icecream-ico::before {
+	background-position: -130px -50px;
+}
+
+.cow-ico::before {
+    background-position: -10px -50px;
+}
+
+.leaf-ico::before {
+    background-position: -62px -119px;
+}
+
+.termometr-ico::before {
+    background-position: -131px -119px;
 }
 
 .features-item:nth-child(odd) {
