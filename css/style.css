@@ -375,7 +375,8 @@ h2 {
 	margin-right: 26px;
 }
 
-/*.features div:last-of-type {
+/* Убрать маргины с низу
+.features div:last-of-type { 
 	background-color: red;
 }*/
 
@@ -431,7 +432,18 @@ h2 {
 }
 
 .map {
+	position: relative;
 	margin-left: -27px;
+}
+
+.map-contacts {
+	position: absolute;
+	right: 27px;
+	top: 67px;
+	width: 302px;
+	min-height: 305px;
+	background-color: #ffffff;
+	color: #323232;
 }
 
 	/*-- catalog.html (Каталог) --*/
