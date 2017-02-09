@@ -193,15 +193,33 @@ h2 {
 	width: 267px;
 }
 
+/*** Стиль кнопок ***/
+.btn {
+	display: inline-block;
+	vertical-align: top;
+	font-family: "Roboto", "Arial", sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 700;
+	color: #ffffff;
+	text-decoration: none;
+	background-image: linear-gradient(to top, #e74a35 0%, #f26843 100%);
+	box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+	padding: 11px 23px;
+	border-radius: 23px 20px 20px 23px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
 
 /*** Основной контент (main) ***/
 	/*-- index.html (главная) --*/
+/*-Блок слайдер-*/
 .slider {
 	height: 535px;
 	margin-bottom: 40px;
 	position: relative;
 }
-
 
 .shedule-phone {
 	position: absolute;
@@ -246,25 +264,6 @@ h2 {
 	font-weight: 700;
 }
 
-.btn {
-	display: inline-block;
-	vertical-align: top;
-	font-family: "Roboto", "Arial", sans-serif;
-	font-size: 18px;
-	line-height: 24px;
-	font-weight: 700;
-	color: #ffffff;
-	text-decoration: none;
-	background-image: linear-gradient(to top, #e74a35 0%, #f26843 100%);
-	box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
-	padding: 11px 23px;
-	border-radius: 23px 20px 20px 23px;
-	border: none;
-	outline: none;
-	cursor: pointer;
-
-}
-
 .slider-btn {
 	position: absolute;
 	bottom: 0;
@@ -276,6 +275,7 @@ h2 {
 	border-radius: 26px 31px 31px 26px;
 }
 
+/*-Промо блок-*/
 .promo {
 	display: flex;
 	justify-content: space-between;
@@ -322,6 +322,8 @@ h2 {
 	color: #ffffff;
 }
 
+/*-Блок Хит продаж-*/
+
 .best-icecream {
 	display: flex;
 	justify-content: space-between;
@@ -329,6 +331,7 @@ h2 {
 }
 
 .best-icecream-item {
+	position: relative;
 	width: 267px;
 }
 
@@ -345,6 +348,43 @@ h2 {
 	text-decoration: none;
 	border-bottom: 1px solid rgba(255, 255, 255, 0.2)
 }
+
+.best-icecream-item::before {
+	position: absolute;
+	content: "";
+	top: 0;
+	left: 0;
+	width: 61px;
+	height: 61px;
+	background: transparent url("../img/hit-icecream.png")
+}
+
+.price {
+	position: absolute;
+	top: 214px;
+	left: 0;
+}
+
+.price-number {
+	font-size: 45px;
+	line-height: 45px;
+	font-weight: 700;
+	color: #ffffff;
+}
+
+.price-img {
+	position: relative;
+	top: 5px;
+}
+
+.price-unit {
+	font-size: 30px;
+	line-height: 45px;
+	font-weight: 700;
+	color: #ffffff;
+}
+
+/*-Блок приимуществ-*/
 
 .features {
 	box-sizing: border-box;
@@ -375,11 +415,6 @@ h2 {
 	padding-left: 55px;
 	margin-right: 26px;
 }
-
-/* Убрать маргины с низу
-.features div:last-of-type { 
-	background-color: red;
-}*/
 
 .features-item::before {
 	position: absolute;
@@ -417,6 +452,7 @@ h2 {
 	margin-bottom: 40px;
 }
 
+/*-Блок- блог и подписка-*/
 .blog,
 .subscribe {
 	width: 560px;
@@ -432,6 +468,7 @@ h2 {
 	background: #ffffff url("../img/subscribe-bg.jpg") no-repeat;
 }
 
+/*-Блок карты-*/
 .map {
 	position: relative;
 	margin-left: -27px;
