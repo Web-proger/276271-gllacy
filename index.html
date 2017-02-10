@@ -38,13 +38,31 @@
     			<p class="shedule">С 10 до 20, ежедневно</p>
     			<p class="phone">8 812 450-25-25</p>
     		</div>
-            <img class="slider-img" src="img/slide1.png" alt="первый слайд с мороженым" width="647" height="584">
-            <p class="slider-title"><b>Крем-брюле и пломбир <br> с малиновым джемом</b></p>
+            <div class="slide-1 active-slide">
+                 <img class="slider-img" src="img/slide1.png" alt="первый слайд с мороженым" width="647" height="584">
+                <p class="slider-title"><b>Крем-брюле и пломбир <br> с малиновым джемом</b></p>
+            </div>
+            <div class="slide-2">
+                 <img class="slider-img" src="img/slide2.png" alt="второй слайд с мороженым" width="644" height="582">
+                <p class="slider-title"><b>Шоколадный пломбир <br> и лимонный сорбет</b></p>
+            </div>
+            <div class="slide-3">
+                 <img class="slider-img" src="img/slide3.png" alt="третий слайд с мороженым" width="639" height="582">
+                <p class="slider-title"><b>Пломбир с помадкой <br> и клубничный щербет</b></p>
+            </div>
+            <a class="btn slider-btn" href="#">Давайте оба!</a>           
             <!-- span в качестве элемента управления слайдером -->
-            <span>slide1</span> 
-            <span>slide2</span>
-            <span>slide3</span>
-            <a class="btn slider-btn" href="#">Давайте оба!</a>
+            <form class="switch-slide" action="#" method="post">
+                <label class="switch">
+                    <input type="radio" name="slides" checked>  
+                </label>
+                <label class="switch">
+                    <input type="radio" name="slides">
+                </label>
+                <label class="switch">
+                    <input type="radio" name="slides">
+                </label>
+            </form>
     	</div>
 
         <!-- Промо блок -->

@@ -344,11 +344,39 @@ a.vk-ico::before {
 	margin-bottom: 0;
 }
 
+.slide-1,
+.slide-2,
+.slide-3 {
+	display: none;
+}
+
+.switch-slide {
+	position: absolute;
+	bottom: 23px;
+	left: 0;
+}
+
+.switch-slide input {
+	display: none;
+}
+
+.switch {
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	border: 3px solid #ffffff;
+	border-radius: 12px;
+}
+
 .slider-img {
 	position: absolute;
 	top: 10px;
 	left: 50%;
 	margin-left: -323px;
+}
+
+.switch-slide input:checked label { /*не работает*/
+	background-color: #ffffff;
 }
 
 .slider-title {
@@ -361,6 +389,10 @@ a.vk-ico::before {
 	font-size: 60px;
 	line-height: 60.35px;
 	font-weight: 700;
+}
+
+.active-slide {
+	display: block;
 }
 
 .slider-btn {
@@ -707,22 +739,21 @@ a.vk-ico::before {
 
 
 
-
 /***** - Для тестирования - *****/
 /***--Ободка главных модулей--***/
-header,
+/*header,
 main,
 footer {
 	outline: 3px solid blue;
-}
+}*/
 
 /**Ободка главных модулей**/
-.container {
+/*.container {
 	outline: 2px solid gray;
-}
+}*/
 
 /**Ободка блоков "второй" вложенности**/
-.slider,
+/*.slider,
 .promo,
 .best-icecream,
 .catalog-icecream,
@@ -731,10 +762,10 @@ footer {
 .pagination,
 .sorting {
 	outline: 2px solid green;
-}
+}*/
 
 /**Ободка блоков "третий" вложенности**/
-.logo,
+/*.logo,
 .main-menu,
 .user-block,
 .promo-left,
@@ -751,25 +782,13 @@ footer {
 .breadcrumbs,
 .shedule-phone {
 	outline: 1px solid pink;
-}
+}*/
 
 /*sprite temp
 .sprite {
     background-image: url(spritesheet.png);
     background-repeat: no-repeat;
     display: block;
-}
-
-.sprite-blogin-ico {
-    width: 21px;
-    height: 19px;
-    background-position: -10px -10px;
-}
-
-.sprite-bsearch-ico {
-    width: 17px;
-    height: 17px;
-    background-position: -51px -10px;
 }
 
 .sprite-cart {
@@ -784,63 +803,4 @@ footer {
     background-position: -129px -10px;
 }
 
-.sprite-cow-ico {
-    width: 48px;
-    height: 49px;
-    background-position: -10px -50px;
-}
-
-.sprite-fb-ico {
-    width: 32px;
-    height: 32px;
-    background-position: -78px -50px;
-}
-
-.sprite-icacream-ico {
-    width: 49px;
-    height: 49px;
-    background-position: -130px -50px;
-}
-
-.sprite-inst-ico {
-    width: 32px;
-    height: 32px;
-    background-position: -10px -119px;
-}
-
-.sprite-leaf-ico {
-    width: 49px;
-    height: 49px;
-    background-position: -62px -119px;
-}
-
-.sprite-termometr-ico {
-    width: 48px;
-    height: 49px;
-    background-position: -131px -119px;
-}
-
-.sprite-tw-ico {
-    width: 32px;
-    height: 32px;
-    background-position: -199px -10px;
-}
-
-.sprite-vk-ico {
-    width: 32px;
-    height: 32px;
-    background-position: -199px -62px;
-}
-
-.sprite-wlogin-ico {
-    width: 21px;
-    height: 19px;
-    background-position: -199px -114px;
-}
-
-.sprite-wsearch-ico {
-    width: 17px;
-    height: 17px;
-    background-position: -199px -153px;
-}
 */
