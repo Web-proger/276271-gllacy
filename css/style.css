@@ -13,6 +13,7 @@ h1 {
 	font-size: 35px;
 	line-height: 41px;
 	font-weight: 700;
+	color: #ffffff;
 }
 
 h2 {
@@ -172,6 +173,19 @@ h2 {
 	padding-right: 22px;
 }
 
+.breadcrumbs-navigation a {
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: 400;
+	color: #ffffff;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+	text-decoration: none;
+}
+
+.breadcrumbs-navigation .current-page  {
+	border-bottom-color: transparent;
+}
+
 /*** Подвал (footer) ***/
 .main-footer {
 	display: flex;
@@ -308,7 +322,7 @@ a.vk-ico::before {
 
 .shedule-phone {
 	position: absolute;
-	top: 0;
+	top: 5px;
 	right: 0;
 	width: 267px;
 	text-align: right;
@@ -428,7 +442,7 @@ a.vk-ico::before {
 .best-icecream a {
 	font-size: 16px;
 	line-height: 22px;
-	font-weight: 700;
+	font-weight: 500;
 	color: #ffffff;
 	text-decoration: none;
 	border-bottom: 1px solid rgba(255, 255, 255, 0.2)
@@ -646,6 +660,12 @@ a.vk-ico::before {
 	width: 560px;
 }
 
+.inner-shedule-phone {
+	width: 267px;
+	text-align: right;
+	color: #ffffff;
+	font-weight: 700;	
+}
 
 .sorting form {
 	display: flex;
@@ -663,7 +683,22 @@ a.vk-ico::before {
 }
 
 .icecream-item {
+	position: relative;
 	width: 267px;
+}
+
+.icecream-item p {
+	margin: 0;
+	text-align: center;
+}
+
+.icecream-item a {
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: 500;
+	color: #ffffff;
+	text-decoration: none;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2)
 }
 
 .pagination {
