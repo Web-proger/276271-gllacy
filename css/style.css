@@ -181,14 +181,13 @@ h2 {
 }
 
 .footer-social,
-.footer-info,
-.footer-copyright {
+.footer-info {
 	display: flex;
 	align-items: center;
 }
 
 .footer-social {
-	width: 267px;
+	width: 245px;
 	font-size: 0;
 }
 
@@ -227,11 +226,6 @@ a.vk-ico::before {
 	background-position: -199px -62px;
 }
 
-.footer-info {
-	display: flex;
-	justify-content: space-between;
-}
-
 .footer-info p {
 	margin: 0;
 }
@@ -267,8 +261,22 @@ a.vk-ico::before {
 }
 
 .footer-copyright {
-	width: 267px;
+	width: 195px;
+	color: #fefefe;
+	font-size: 12px;
+	line-height: 18px;
+
 }
+
+.footer-copyright p {
+	margin: 0;
+}
+
+.footer-copyright a {
+	color: #fefefe;
+}
+
+
 
 /*** Стиль кнопок ***/
 .btn {
