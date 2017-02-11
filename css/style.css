@@ -66,6 +66,28 @@ img {
 	color: #ffffff;
 }
 
+.main-menu a:hover {
+	background-color: #f7f6f3;
+	color: #323232;
+	border-radius: 13px;	
+}
+
+.main-menu a:active {
+	background-color: #ededed;
+	color: #323232;
+	box-shadow: inset 0 2px 1px;
+}
+
+.main-menu .menu-active:hover {
+	background: #d07058;
+	color: #ffffff;
+}
+
+.main-menu .menu-active:active {
+	box-shadow: none;
+}
+
+
 .main-menu a::before {
 	position: absolute;
 	content: "";
@@ -170,6 +192,15 @@ img {
     background-position: -88px -10px;	
 }
 
+.user-block .cart-full {
+	color: #323232;
+	background-color: #f7f6f3;
+}
+
+.user-block .cart-full::before {
+    background-position: -129px -10px;
+}
+
 /*** breadcrumbs  ***/
 .content-header {
 	display: flex;
@@ -236,7 +267,7 @@ img {
 .footer-social a::before {
 	position: absolute;
 	content: "";
-	top: 3px;
+	top: 4px;
 	left: 3px;
 	width: 32px;
 	height: 32px;
@@ -694,7 +725,8 @@ body > input[type="radio"] {
 	line-height: 24px;
 	font-weight: 400;
 	color: #999999;
-	border: 1px solid rgba(178, 178, 178, 0.5)
+	border: 1px solid rgba(178, 178, 178, 0.5);
+	border-radius: 6px;
 }
 
 .subscribe .btn {
