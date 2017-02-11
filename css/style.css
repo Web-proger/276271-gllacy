@@ -23,6 +23,11 @@ h2 {
 
 /***** 2. Сетка *****/
 	/*-- Общее --*/
+img {
+	max-width: 100%;
+	height: auto;
+}
+
 /***Центровщик блоков**/
 .container {
 	width: 1146px;
@@ -53,14 +58,26 @@ h2 {
 }
 
 .main-menu a {
+	position: relative;
 	display: inline-block;
 	vertical-align: top;
 	margin-right: 10px;
+	text-decoration: none;
 	font-size: 16px;
 	line-height: 18px;
 	font-weight: 700;
 	padding: 7px 14px;
 	color: #ffffff;
+}
+
+.main-menu a::before {
+	position: absolute;
+	content: "";
+	height: 1px;
+	bottom: 7px;
+	left: 14px;
+	right: 14px;
+	background-color: rgba(255, 255, 255, 0.2);
 }
 
 .menu-active {
@@ -194,6 +211,11 @@ h2 {
 	padding-bottom: 23px;
 }
 
+.main-footer a {
+	text-decoration: none;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
 .footer-social,
 .footer-info {
 	display: flex;
@@ -213,7 +235,6 @@ h2 {
 	height: 38px;
 	background-color: #c2cec7;
 	border-radius: 19px;
-
 }
 
 .footer-social a::before {
