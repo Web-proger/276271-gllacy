@@ -8,8 +8,10 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <!--<p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>-->
-    <!-- Шапка сайта -->
+    <input type="radio" id="slide-1" name="slide" checked>   
+    <input type="radio" id="slide-2" name="slide">
+    <input type="radio" id="slide-3" name="slide">                
+    <div class="global-wrapper">
     <header class="main-header container">
     	<a class="logo-link">
             <img class="logo" src="img/logo-gllacy.png" alt="Логотип Глэйси" width="154" height="64">
@@ -38,31 +40,28 @@
     			<p class="shedule">С 10 до 20, ежедневно</p>
     			<p class="phone">8 812 450-25-25</p>
     		</div>
-            <div class="slide-1 active-slide">
+            <div class="slide-1">
                  <img class="slider-img" src="img/slide1.png" alt="первый слайд с мороженым" width="647" height="584">
                 <p class="slider-title"><b>Крем-брюле и пломбир <br> с малиновым джемом</b></p>
+                <a class="btn slider-btn" href="#">Давайте оба!</a>
             </div>
             <div class="slide-2">
                  <img class="slider-img" src="img/slide2.png" alt="второй слайд с мороженым" width="644" height="582">
                 <p class="slider-title"><b>Шоколадный пломбир <br> и лимонный сорбет</b></p>
+                <a class="btn slider-btn" href="#">Давайте оба!</a>
             </div>
             <div class="slide-3">
                  <img class="slider-img" src="img/slide3.png" alt="третий слайд с мороженым" width="639" height="582">
                 <p class="slider-title"><b>Пломбир с помадкой <br> и клубничный щербет</b></p>
+                <a class="btn slider-btn" href="#">Давайте оба!</a>
             </div>
-            <a class="btn slider-btn" href="#">Давайте оба!</a>           
             <!-- span в качестве элемента управления слайдером -->
-            <form class="switch-slide" action="#" method="post">
-                <label class="switch">
-                    <input type="radio" name="slides" checked>  
-                </label>
-                <label class="switch">
-                    <input type="radio" name="slides">
-                </label>
-                <label class="switch">
-                    <input type="radio" name="slides">
-                </label>
-            </form>
+            <div class="switch-slide-label">
+                <label class="switch" for="slide-1"></label>
+                <label class="switch" for="slide-2"></label>
+                <label class="switch" for="slide-3"></label>                
+            </div>
+
     	</div>
 
         <!-- Промо блок -->
@@ -175,7 +174,7 @@
             <div class="footer-info">
                 <div class="footer-info-left">
                     <p class="for-suppliers">
-                        <a href="#"><b>Для поставщиков<b></a>
+                        <a href="#"><b>Для поставщиков</b></a>
                     </p>
                     <p><a href="#">О производстве</a></p>
                 </div>
@@ -189,5 +188,6 @@
                 <p>Сделано в <a href="#">HTML Academy</a>  © 2017</p>
             </div>
         </footer>
+        </div>
   </body>
 </html>
