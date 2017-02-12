@@ -33,9 +33,33 @@
     		</ul>
     	</nav>
     	<div class="user-block">
-            <a class="search" href="#">Поиск</a>
-            <a class="entry-menu" href="#">Вход</a>
-            <a class="cart" href="#">Пусто</a>
+            <ul>
+                <li>
+                    <a class="search" href="#">Поиск</a>
+                    <div class="search-popup">
+                        <form class="form-style" action="#" method="post">
+                            <input type="text" placeholder="Что ищем?">
+                        </form>
+                    </div>  
+                </li>
+                <li>
+                    <a class="entry-menu" href="#">Вход</a>
+                   <div class="entry-menu-popup">
+                        <form class="form-style" action="#" method="post">
+                            <input type="text" placeholder="Электронная почта">
+                            <input type="password" placeholder="Пароль">
+                            <button class="btn" type="submit">Войти</button> 
+                            <div class="entry-menu-link">
+                                <a href="#">Забыли пароль?</a>
+                                <a href="#">Новая регистрация</a>     
+                            </div>                                            
+                        </form>                
+                    </div>                
+                </li>      
+                <li>
+                    <a class="cart" href="#">Пусто</a>                
+                </li>
+            </ul>
     	</div>
     </header>
 

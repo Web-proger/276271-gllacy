@@ -135,9 +135,6 @@ img {
 
 /*** Стили для форм ***/
 .form-style {
-	position: absolute;
-	top: 10px;
-	left: 50%;
 	font-family: "Roboto", "Arial", sans-serif;
 	font-size: 16px;
 	line-height: 24px;	
@@ -185,6 +182,65 @@ img {
 }
 
 /**** experemental ****/
+.user-block ul {
+	margin: 0;
+	display: flex;
+	list-style: none;
+}
+
+.user-block li {
+	position: relative;
+}
+
+.search-popup {
+	display: none;
+	position: absolute;
+	z-index: 1;
+	padding-left: 15px;
+	padding-right: 15px;
+	top: 30px;
+	right: 10px;
+	background-color: #f8f7f4;
+	box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+	border-radius: 5px;
+}
+
+.entry-menu-popup {
+	display: none;
+	position: absolute;
+	top: 30px;
+	right: 0;
+	z-index: 1;
+	padding-left: 19px;
+	padding-right: 17px;
+	background-color: #f8f7f4;
+	box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+	border-radius: 5px;
+}
+
+.entry-menu-popup input {
+	width: 241px;
+}
+
+.search:hover + .search-popup {
+	display: block;
+}
+
+.entry-menu:hover + .entry-menu-popup {
+	display: block;
+}
+
+.entry-menu-link {
+	display: inline-block;
+	width: 160px;
+}
+
+.entry-menu-link a {
+	font-size: 13px;
+	line-height: 24px;
+	font-weight: 400;
+	color: #323232;
+}
 
 /*** end experemental ****/
 
