@@ -213,7 +213,7 @@ img {
 }
 
 .entry-menu-popup {
-	display: block;
+	display: none;
 	position: absolute;
 	top: 30px;
 	right: 0;
