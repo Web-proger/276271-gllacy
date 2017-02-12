@@ -142,19 +142,22 @@ img {
 }
 
 .form-style input {
+	box-sizing: border-box;
+	height: 42px;
 	display: block;
 	padding: 10px 15px;
 	margin: 20px auto;
 	font-weight: 400;
-	/*outline: 1px solid #c7c6c5;*/
+	border: 1px solid #c7c6c5;
+
 }
 
 .form-style input:hover {
-	/*outline: 2px solid #c7c6c5;*/
+	border: 2px solid #c7c6c5;
 }
 
 .form-style input:focus {
-	/*outline: 2px solid #8fbdec;*/
+	border: 2px solid #8fbdec;
 }
 
 /*** Поиск и выпадающие меню поиска ***/
@@ -205,12 +208,17 @@ img {
 	border-radius: 5px;
 }
 
+.search-popup input {
+	width: 311px;
+}
+
 .entry-menu-popup {
-	display: none;
+	display: block;
 	position: absolute;
 	top: 30px;
 	right: 0;
 	z-index: 1;
+	padding-bottom: 20px;
 	padding-left: 19px;
 	padding-right: 17px;
 	background-color: #f8f7f4;
@@ -220,6 +228,10 @@ img {
 
 .entry-menu-popup input {
 	width: 241px;
+}
+
+.entry-menu-popup .btn {
+	margin-right: 20px;
 }
 
 .search:hover + .search-popup {
@@ -232,14 +244,19 @@ img {
 
 .entry-menu-link {
 	display: inline-block;
-	width: 160px;
+	width: 119px;
 }
 
 .entry-menu-link a {
+	padding: 0;
+	margin: 0;
 	font-size: 13px;
 	line-height: 24px;
 	font-weight: 400;
 	color: #323232;
+	text-decoration: underline;
+/*	border-bottom: 1px solid rgba(50, 50, 50, 0.3);*/
+/*	border-radius: 0;*/
 }
 
 /*** end experemental ****/
