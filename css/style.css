@@ -133,43 +133,40 @@ img {
 	text-decoration: none;
 }
 
+/*** Стили для форм ***/
+.form-style {
+	position: absolute;
+	top: 10px;
+	left: 50%;
+	font-family: "Roboto", "Arial", sans-serif;
+	font-size: 16px;
+	line-height: 24px;	
+	color: #323232;
+}
+
+.form-style input {
+	display: block;
+	padding: 10px 15px;
+	margin: 20px auto;
+	font-weight: 400;
+	/*outline: 1px solid #c7c6c5;*/
+}
+
+.form-style input:hover {
+	/*outline: 2px solid #c7c6c5;*/
+}
+
+.form-style input:focus {
+	/*outline: 2px solid #8fbdec;*/
+}
+
+/*** Поиск и выпадающие меню поиска ***/
 .user-block .search {
 	position: relative;
 	font-size: 0;
 	padding: 0;
 	width: 32px;
 	height: 32px;
-}
-
-.user-block .search:hover {
-	
-}
-
-.user-block .entry-menu {
-	position: relative;
-	padding-right: 16px;
-	padding-left: 44px;
-}
-
-.user-block .search:hover,
-.user-block .entry-menu:hover {
-	color: #373737;
-	background-color: #f8f7f4;
-}
-
-.user-block .entry-menu::before {
-	position: absolute;
-	content: "";
-	top: 7px;
-	left: 17px;
-	width: 21px;
-    height: 19px;
-	background: url("../img/sprite-ico.png") no-repeat;
-    background-position: -199px -114px;
-}
-
-.user-block .entry-menu:hover::before {
-    background-position: -10px -10px;	
 }
 
 .user-block .search::before {
@@ -186,6 +183,40 @@ img {
 .user-block .search:hover::before {
 	background-position: -51px -10px;
 }
+
+/**** experemental ****/
+
+/*** end experemental ****/
+
+.user-block .entry-menu {
+	position: relative;
+	padding-right: 16px;
+	padding-left: 44px;
+}
+
+.user-block .search:hover,
+.user-block .entry-menu:hover {
+	color: #373737;
+	background-color: #f8f7f4;
+}
+
+/*** Вход и выпадающие меню входа ***/
+.user-block .entry-menu::before {
+	position: absolute;
+	content: "";
+	top: 7px;
+	left: 17px;
+	width: 21px;
+    height: 19px;
+	background: url("../img/sprite-ico.png") no-repeat;
+    background-position: -199px -114px;
+}
+
+.user-block .entry-menu:hover::before {
+    background-position: -10px -10px;	
+}
+
+
 
 .user-block .cart {
 	position: relative;
