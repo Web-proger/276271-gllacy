@@ -56,13 +56,13 @@ img {
 	margin-right: 11px;	
 }
 
-.main-menu ul {
+.main-navigation .main-menu {
 	display: flex;
 	list-style: none;
 	padding: 0;
 }
 
-.main-menu a {
+.main-navigation a {
 	position: relative;
 	display: inline-block;
 	vertical-align: top;
@@ -75,29 +75,29 @@ img {
 	color: #ffffff;
 }
 
-.main-menu a:hover {
+.main-navigation a:hover {
 	background-color: #f7f6f3;
 	color: #323232;
 	border-radius: 13px;	
 }
 
-.main-menu a:active {
+.main-navigation a:active {
 	background-color: #ededed;
 	color: #323232;
 	box-shadow: inset 0 2px 1px;
 }
 
-.main-menu .menu-active:hover {
+.main-navigation .menu-active:hover {
 	background: #d07058;
 	color: #ffffff;
 }
 
-.main-menu .menu-active:active {
+.main-navigation .menu-active:active {
 	box-shadow: none;
 }
 
 
-.main-menu a::before {
+.main-navigation a::before {
 	position: absolute;
 	content: "";
 	height: 1px;
@@ -139,6 +139,10 @@ img {
 	padding: 0;
 	width: 32px;
 	height: 32px;
+}
+
+.user-block .search:hover {
+	
 }
 
 .user-block .entry-menu {
@@ -391,6 +395,85 @@ a.vk-ico::before {
 /*** Основной контент (main) ***/
 	/*-- index.html (главная) --*/
 /*-Блок слайдер-*/
+.menu-catalog{
+	position: relative;
+}
+
+.sub-menu {
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 32px;
+	padding: 0;
+	width: 152px;
+	overflow: hidden;
+	list-style: none;
+	background-color: #f8f7f4;
+	border-radius: 5px;
+	box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+}
+
+.sub-menu a {
+	padding: 6px 0;
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: 400;
+	color: #323232;
+}
+
+.sub-menu a:hover {
+	background-color: transparent;
+}
+
+.sub-menu a:active {
+	box-shadow: none;
+}
+
+.sub-menu li {
+	padding: 0 20px;
+}
+
+.sub-menu li:hover {
+	background-color: #fbded7;
+}
+
+.sub-menu li:active {
+	background-color: #f6b5a5;
+}
+
+.sub-menu b {
+	font-weight: 700;	
+}
+
+.sub-menu-section {
+	position: relative;
+}
+
+.sub-menu .sub-menu-section:hover {
+	background-color: transparent;
+}
+
+.sub-menu .sub-menu-section:active {
+	background-color: transparent;
+}
+
+.sub-menu-section::before {
+	position: absolute;
+	content: "";
+	bottom: 0;
+	left: 6px;
+	right: 9px;
+	height: 1px;
+	background-color: rgba(50, 50, 50, 0.2);
+}
+
+.menu-catalog:hover .sub-menu {
+	display: block;
+	z-index: 5;
+} 
+/****Слайдер ****/
+
+
 .slider {
 	height: 535px;
 	margin-bottom: 40px;
@@ -812,6 +895,14 @@ body > input[type="radio"] {
 }
 
 	/*-- catalog.html (Каталог) --*/
+.inner-page .sub-menu-active-page {
+	background-color: #d07058;
+}
+
+.inner-page .sub-menu-active-page:hover {
+	background-color: #d07058;
+}
+
 .breadcrumbs {
 	width: 560px;
 }
@@ -890,7 +981,7 @@ footer {
 
 /**Ободка блоков "третий" вложенности**/
 /*.logo,
-.main-menu,
+.main-navigation,
 .user-block,
 .promo-left,
 .promo-right,
