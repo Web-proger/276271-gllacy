@@ -19,6 +19,15 @@ h1 {
 h2 {
 	/*h2 в разметке отсутствует*/
 }
+/* Взаимодействие со ссылками */
+.link-hover a[href]:hover {
+	color: #ffbc9e;
+}
+
+.link-active a[href]:active {
+	color: #ffbc9e;
+}
+
 
 
 /***** 2. Сетка *****/
@@ -273,6 +282,7 @@ img {
 	height: 32px;
 	border-radius: 16px;
 	background: url("../img/sprite-ico.png") no-repeat;
+	opacity: 0.8;
 }
 
 a.tw-ico::before {
@@ -286,6 +296,15 @@ a.fb-ico::before {
 }
 a.vk-ico::before {
 	background-position: -199px -62px;
+}
+
+.footer-social a:hover::before {
+	opacity: 1;
+}
+
+.footer-social a:active::before{
+	opacity: 0.8;
+	box-shadow: inset 0 2px 1px #888888;
 }
 
 .footer-info p {
@@ -357,6 +376,16 @@ a.vk-ico::before {
 	border: none;
 	outline: none;
 	cursor: pointer;
+}
+
+.btn:hover {
+	background-image: linear-gradient(to top, #ec6f5e, #f58669);
+	box-shadow: (0 2px 2px #ac1000)
+}
+
+.btn:active {
+	background-image: linear-gradient(to top, #e1613e, #d84732);
+	box-shadow: inset 0 2px 2px #942718;
 }
 
 /*** Основной контент (main) ***/
@@ -458,6 +487,10 @@ body > input[type="radio"] {
 	height: 18px;
 	border: 3px solid #ffffff;
 	border-radius: 12px;
+}
+
+.switch:hover {
+	background-color: rgba(255, 255, 255, 0.4);
 }
 
 .slider-img {
@@ -700,6 +733,10 @@ body > input[type="radio"] {
 	color: #323232;
 }
 
+.blog-caption a:active {
+	color: #e84d37;
+}
+
 .subscribe {
 	padding: 33px 26px;
 	background: #ffffff url("../img/subscribe-bg.jpg") no-repeat;
@@ -738,6 +775,8 @@ body > input[type="radio"] {
 .map {
 	position: relative;
 	margin-left: -27px;
+	width: 1200px;
+	height: 430px;
 }
 
 .map-contacts {
