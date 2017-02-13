@@ -191,27 +191,21 @@ img {
 }
 
 /**** experemental ****/
-.user-block ul {
-	margin: 0;
-	display: flex;
-	list-style: none;
-}
-
-.user-block li {
-	position: relative;
-}
-
 .search-popup {
 	display: none;
 	position: absolute;
 	z-index: 1;
 	padding-left: 15px;
 	padding-right: 15px;
-	top: 30px;
-	right: 10px;
+	top: 52px;
+	right: 237px;
 	background-color: #f8f7f4;
 	box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
 	border-radius: 5px;
+}
+
+.inner-page .search-popup {
+	right: 255px;	
 }
 
 .search-popup input {
@@ -221,8 +215,8 @@ img {
 .entry-menu-popup {
 	display: none;
 	position: absolute;
-	top: 30px;
-	right: 0;
+	top: 52px;
+	right: 132px;
 	z-index: 1;
 	padding-bottom: 20px;
 	padding-left: 19px;
@@ -230,6 +224,10 @@ img {
 	background-color: #f8f7f4;
 	box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
 	border-radius: 5px;
+}
+
+.inner-page .entry-menu-popup {
+	right: 149px;
 }
 
 .entry-menu-popup input {
@@ -1032,7 +1030,7 @@ body > input[type="radio"] {
 .goods-carts {
 	display: none;
 	position: absolute;
-	top: 50px;
+	top: 52px;
 	right: 0;
 	z-index: 1;
 	box-sizing: border-box;
@@ -1079,30 +1077,25 @@ body > input[type="radio"] {
 .goods-carts-line td:nth-child(1) {
 	width: 35px;
 	text-align: center;
-	background-color: blue;
 }
 
 .goods-carts-line td:nth-child(2) {
 	width: 55px;
 	text-align: center;
-	background-color: red;
 }
 
 .goods-carts-line td:nth-child(3) {
 	width: 220px;
 	padding-right: 10px;
-	background-color: yellow;
 }
 
 .goods-carts-line td:nth-child(4) {
 	width: 100px;
-	background-color: pink;
 }
 
 .goods-carts-line td:nth-child(5) {
 	width: 60px;
 	padding-left: 10px;
-	background-color: grey;
 }
 
 .goods-carts .btn {
@@ -1133,6 +1126,7 @@ body > input[type="radio"] {
 .icecream-item {
 	position: relative;
 	width: 267px;
+	margin-bottom: 40px;
 }
 
 .icecream-item p {
