@@ -34,6 +34,32 @@
 	    	<a class="search" href="#">Поиск</a>
 	    	<a class="entry-menu" href="#">Вход</a>
 	    	<a class="cart cart-full" href="#">2 товара</a>
+            <div class="goods-carts">
+                <table>
+                    <tr class="goods-carts-line">
+                        <td><img src="img/carts-checked.png" width="10px" height="11px" alt="Морожено выбрано"></td>
+                        <td><img src="img/icecream-carts1.png" width="33" height="33" alt="Превью"></td>
+                        <td class="carts-name-icecream">Пломбир с апельсиновым джемом</td>
+                        <td class="carts-price">1,5 кг х <span >200 руб.</span></td>
+                        <td>300 руб.</td>
+                    </tr>
+                    <tr class="goods-carts-line">
+                        <td><img src="img/carts-checked.png" width="10px" height="11px" alt="Морожено выбрано"></td>
+                        <td><img src="img/icecream-carts2.png" width="33" height="33" alt="Превью"></td>
+                        <td class="carts-name-icecream">Клубничный пломбир с присыпкой из белого шоколада</td>
+                        <td class="carts-price">1,5 кг х <span>300 руб.</span></td>
+                        <td>450 руб.</td>
+                    </tr>
+                </table>
+                <hr>
+                <div class="block-total-price">
+                    <strong>Итого:</strong>
+                    <strong class="total-price">750 руб.</strong>
+                </div>
+                <div>
+                    <a class="btn" href="#">Оформить заказ</a>
+                </div>
+            </div>
     	</div>
     </header>
 
@@ -63,6 +89,9 @@
                     <span>Сортировка:</span>
                     <select name="sorting-type">
                         <option value="popularity">По популярности</option>
+                        <option value="popularity">сначала недорогие</option>
+                        <option value="popularity">сначала дорогие</option>
+                        <option value="popularity">по жирности</option>
                     </select> 
                 </div>
                 <div class="sorting-price">

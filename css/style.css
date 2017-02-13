@@ -1023,6 +1023,91 @@ body > input[type="radio"] {
 	font-weight: 700;	
 }
 
+/*Всплывающие окно - Товары в корзине*/
+.goods-carts {
+	position: fixed;
+	top: 200px;
+	left: 200px;
+	z-index: 1;
+	box-sizing: border-box;
+	width: 540px;
+	padding: 19px 15px;
+	background-color: #f8f7f4;
+	border-radius: 5px;	
+	box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+}
+
+.goods-carts table {
+	font-size: 13px;
+	line-height: 16px;
+	font-weight: 400;
+	color: #323232;	
+}
+
+.carts-price span {
+	color: #999999;
+}
+
+.goods-carts div {
+	text-align: right;
+}
+
+.goods-carts strong {
+	font-size: 15px;
+	line-height: 18px;
+	font-weight: 700;
+	color: #323232;
+}
+
+.goods-carts hr {
+	display: block;
+	margin-top: 1px;
+	margin-bottom: 16px;
+}
+
+.goods-carts-line td {
+	padding-top: 10px;	
+	padding-bottom: 10px;
+}
+
+.goods-carts-line td:nth-child(1) {
+	width: 35px;
+	text-align: center;
+	background-color: blue;
+}
+
+.goods-carts-line td:nth-child(2) {
+	width: 55px;
+	text-align: center;
+	background-color: red;
+}
+
+.goods-carts-line td:nth-child(3) {
+	width: 220px;
+	padding-right: 10px;
+	background-color: yellow;
+}
+
+.goods-carts-line td:nth-child(4) {
+	width: 100px;
+	background-color: pink;
+}
+
+.goods-carts-line td:nth-child(5) {
+	width: 60px;
+	padding-left: 10px;
+	background-color: grey;
+}
+
+.goods-carts .btn {
+	margin-right: 0;
+}
+
+.goods-carts .block-total-price {
+	margin-bottom: 13px;
+}
+
+/*Блок сортировки*/
 .sorting form {
 	display: flex;
 	flex-wrap: wrap;
@@ -1032,6 +1117,7 @@ body > input[type="radio"] {
 	width: 194px;
 }
 
+/*Блок - каталог мароженного*/
 .catalog-icecream {
 	display: flex;
 	flex-wrap: wrap;
@@ -1057,6 +1143,7 @@ body > input[type="radio"] {
 	border-bottom: 1px solid rgba(255, 255, 255, 0.2)
 }
 
+/*Блок - переключатль страниц*/
 .pagination {
 	text-align: right;
 }
@@ -1107,6 +1194,18 @@ body > input[type="radio"] {
 .modal-feedback div {
 	text-align: right;
 	margin-bottom: 27px;
+}
+
+/* Порзрачный слой при появлении модального окна */
+.modal-layout {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 6;
+	background-color: rgba(0, 0, 0, 0.5);
 }
 
 /***** - Для тестирования - *****/
