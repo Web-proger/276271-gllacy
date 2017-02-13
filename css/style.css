@@ -107,6 +107,10 @@ img {
 	background-color: rgba(255, 255, 255, 0.2);
 }
 
+.main-navigation .sub-menu a::before {
+	content: none;
+}
+
 .menu-active {
 	background-color: #d07058;
 	border-radius: 13px;
@@ -1059,7 +1063,7 @@ body > input[type="radio"] {
 /*** Модальные окна ***/
 /*-- Форма обратной связи --*/
 .modal-feedback {
-	display: block;
+	display: none;
 	position: fixed;
 	top: 25%;
 	left: 0;
