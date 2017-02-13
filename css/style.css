@@ -118,6 +118,7 @@ img {
 
 
 .user-block {
+	position: relative;
 	padding: 16px;
 	padding-right: 0;
 	margin-left: auto;
@@ -1022,12 +1023,17 @@ body > input[type="radio"] {
 	color: #ffffff;
 	font-weight: 700;	
 }
+/***********/
+.cart-full:hover + .goods-carts{
+	display: block;
+}
 
 /*Всплывающие окно - Товары в корзине*/
 .goods-carts {
-	position: fixed;
-	top: 200px;
-	left: 200px;
+	display: none;
+	position: absolute;
+	top: 50px;
+	right: 0;
 	z-index: 1;
 	box-sizing: border-box;
 	width: 540px;
