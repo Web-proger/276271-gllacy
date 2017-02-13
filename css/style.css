@@ -492,7 +492,7 @@ a.vk-ico::before {
 
 .btn:hover {
 	background-image: linear-gradient(to top, #ec6f5e, #f58669);
-	box-shadow: (0 2px 2px #ac1000)
+	box-shadow: 0 2px 2px #ac1000;
 }
 
 .btn:active {
@@ -802,6 +802,7 @@ body > input[type="radio"] {
 	position: absolute;
 	top: 214px;
 	left: 0;
+	z-index: 6;
 }
 
 .price-number {
@@ -1121,10 +1122,12 @@ body > input[type="radio"] {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
+	margin-bottom: 45px;
 }
 
 .icecream-item {
 	position: relative;
+	z-index: 5;
 	width: 267px;
 	margin-bottom: 40px;
 }
@@ -1141,6 +1144,52 @@ body > input[type="radio"] {
 	color: #ffffff;
 	text-decoration: none;
 	border-bottom: 1px solid rgba(255, 255, 255, 0.2)
+}
+
+/*Поведение товара при наведении товар*/
+.substrate {
+	display: none;
+	position: absolute;
+	z-index: 4;
+	width: 293px;
+	height: 405px;
+	top: -6px;
+	left: -13px;
+	background-color: rgba(248, 247, 244, 0.3);
+	border-radius: 5px;
+}
+
+.substrate-btn {
+	display: block;
+	position: absolute;
+	z-index: 2;
+	bottom: 22px;
+	left: 0;
+	right: 0;
+	width: 154px;
+	margin: 0 auto;
+}
+
+.icecream-item .substrate .substrate-btn:hover {
+	color: #ffffff;
+}
+
+.icecream-item .substrate .substrate-btn:active {
+	color: #ffffff;
+}
+
+.icecream-item:hover {
+	z-index: 10;
+}
+
+.icecream-item:hover .substrate {
+	display: block;
+	z-index: 1;
+}
+
+.icecream-img, .icecream-description {
+	position: relative;
+	z-index: 4;
 }
 
 /*Блок - переключатль страниц*/
