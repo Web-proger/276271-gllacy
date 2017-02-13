@@ -772,6 +772,7 @@ body > input[type="radio"] {
 .best-icecream-item {
 	position: relative;
 	width: 267px;
+	z-index: 5;
 }
 
 .best-icecream p {
@@ -793,6 +794,7 @@ body > input[type="radio"] {
 	content: "";
 	top: 0;
 	left: 0;
+	z-index: 11;
 	width: 61px;
 	height: 61px;
 	background: transparent url("../img/hit-icecream.png")
@@ -1174,15 +1176,33 @@ body > input[type="radio"] {
 	color: #ffffff;
 }
 
+.best-icecream-item .substrate .substrate-btn:hover {
+	color: #ffffff;
+}
+
 .icecream-item .substrate .substrate-btn:active {
 	color: #ffffff;
 }
+
+.best-icecream-item .substrate .substrate-btn:active {
+	color: #ffffff;
+}
+
 
 .icecream-item:hover {
 	z-index: 10;
 }
 
+.best-icecream-item:hover {
+	z-index: 10;
+}
+
 .icecream-item:hover .substrate {
+	display: block;
+	z-index: 1;
+}
+
+.best-icecream-item:hover .substrate {
 	display: block;
 	z-index: 1;
 }
