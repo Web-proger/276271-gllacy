@@ -1162,12 +1162,23 @@ body > input[type="radio"] {
 	outline: none;
 }
 
-.sorting button {
+.sorting .sorting-btn {
 	display: inline-block;
 	vertical-align: top;
 	border: 2px solid #ffffff;
 	background-color: rgba(255, 255, 255, 0.2);
 	outline: none;
+}
+
+.sorting .sorting-btn:hover {
+	background-color: #ffffff;
+	color: #323232;
+}
+
+.sorting .sorting-btn:active {
+	background-color: #ededed;
+	color: #323232;
+	box-shadow: inset 0 2px 1px #696969;
 }
 
 /*Жирность + наполнитель*/
