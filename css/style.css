@@ -693,7 +693,7 @@ body > input[type="radio"] {
 
 .slider-title {
 	position: absolute;
-	width: 794px;
+	width: 796px;
 	top: 260px;
 	left: 177px;
 	text-align: center;
@@ -1171,7 +1171,8 @@ body > input[type="radio"] {
 
 /*Жирность + наполнитель*/
 .sorting-fatness input,
-.sorting-filler input {
+.sorting-filler input,
+.sorting-price input {
 	display: none;
 }
 
@@ -1200,6 +1201,42 @@ body > input[type="radio"] {
 	border: 1px solid #ffffff;	
 	border-radius: 4px;
 }
+
+.sorting-price {
+	position: relative;
+}
+
+.sorting-price span {
+	position: absolute;	
+	top: -2px;
+	left: 0;
+	width: 20px;
+	height: 20px;
+	border-radius: 10px;
+	background-color: #f8f7f4;
+}
+
+.sorting-price .range-line {
+	top: 16px;
+	left: 15px;
+	width: 188px;
+	height: 4px;
+	border-radius: 0;
+}
+
+.sorting-price .range-left {
+	top: 8px;
+	left: 34px;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.sorting-price .range-right {
+	top: 8px;
+	left: 132px;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+
 
 .sorting-fatness input:checked + span::before {
 	position: absolute;
