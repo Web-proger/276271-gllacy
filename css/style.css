@@ -1118,7 +1118,7 @@ body > input[type="radio"] {
 .sorting-type {
 	width: 194px;
 }
-/**Experemental ***/
+
 .sorting form,
 .sorting input,
 .sorting select,
@@ -1189,15 +1189,17 @@ body > input[type="radio"] {
 	position: absolute;	
 	top: -2px;
 	left: 0;
-	width: 18px;
-	height: 18px;
+	width: 20px;
+	height: 20px;
+	box-sizing: border-box;
 	border: 2px solid #ffffff;
 	border-radius: 11px;
+	cursor: pointer;
 }
 
 .sorting-filler span {
-	width: 19px;
-	height: 19px;
+	width: 20px;
+	height: 20px;
 	border: 1px solid #ffffff;	
 	border-radius: 4px;
 }
@@ -1254,16 +1256,14 @@ body > input[type="radio"] {
 	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
 }
 
-
-
 .sorting-fatness input:checked + span::before {
 	position: absolute;
 	content: "";
 	top: 3px;
 	left: 3px;
-	width: 12px;
-	height: 12px;
-	border-radius: 6px;
+	width: 10px;
+	height: 10px;
+	border-radius: 5px;
 	background-color: #ffffff;
 }
 
@@ -1288,6 +1288,39 @@ body > input[type="radio"] {
 	background-color: #ffffff;
 	transform: rotate(125deg);	
 }
+
+
+/*** Взаимодействие с элементами сортировки ***/
+.sorting-fatness span:hover {
+	border: 3px solid #ffffff;	
+}
+
+.sorting .sorting-fatness span:hover::before {
+	top: 2px;
+	left: 2px;
+}
+
+.sorting-filler span:hover {
+	border: 2px solid #ffffff;	
+}
+
+.sorting .sorting-filler span:hover::before {
+	top: 6px;
+	left: 3px;	
+}
+
+.sorting .sorting-filler span:hover::after {
+	top: 2px;
+	left: 9px;	
+}
+
+/*--В заблокированном состоянии. проставляется для Label --*/
+.sorting-fatness .locked-item span,
+.sorting-filler .locked-item span {
+	opacity: 0.4;
+}
+
+
 
 /*end жирность*/
 
@@ -1348,7 +1381,7 @@ body > input[type="radio"] {
 	border-bottom: 1px solid rgba(255, 255, 255, 0.2)
 }
 
-/*Поведение товара при наведении товар*/
+/*Поведение при наведении на карточку товара */
 .substrate {
 	display: none;
 	position: absolute;
