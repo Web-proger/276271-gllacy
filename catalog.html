@@ -101,38 +101,42 @@
         <!-- Сортировка морженного -->
         <section class="sorting">
             <form action="#" method="post" oninput="outprice.value=inprice.value">
-                <div class="sorting-type">
-                    <span>Сортировка:</span>
+                <fieldset class="sorting-type">
+                    <legend>Сортировка:</legend>
                     <select name="sorting-type">
                         <option value="popularity">По популярности</option>
                         <option value="popularity">сначала недорогие</option>
                         <option value="popularity">сначала дорогие</option>
                         <option value="popularity">по жирности</option>
                     </select> 
-                </div>
-                <div class="sorting-price">
-                    <span>Цена: 100 руб. – 500 руб.</span>
+                </fieldset>
+                <fieldset class="sorting-price">
+                    <legend>Цена: 100 руб. – 500 руб.</legend>
                     <!-- пока не знаю как сделать диапозон, как вариант 2 span или через 2 input text задавать диапозон-->
                     <input type="range" min="100" max="500" step="1" name="inprice" id="inprice">
                     <output name="outprice">200</output>
-                </div>
+                </fieldset>
                 <!-- Сортировка по жирности -->
                 <fieldset class="sorting-fatness">
                     <legend>Жирность:</legend>
                     <label>
                         <input type="radio" name="fatness" value="fat0">
+                        <span></span>
                         0%
                     </label>
                     <label>
                         <input type="radio" name="fatness" value="fat10" checked>
+                        <span></span>
                         до 10%
                     </label>
                     <label>
                         <input type="radio" name="fatness" value="fat30">
+                        <span></span>
                         до 30%
                     </label>
                     <label>
                         <input type="radio" name="fatness" value="fat-more">
+                        <span></span>
                         выше 30%
                     </label>
                 </fieldset>
@@ -141,26 +145,31 @@
                     <legend>Наполнители:</legend>
                     <label>
                         <input type="checkbox" name="chocolate" checked>
+                        <span></span>
                         шоколадные
                     </label>
                     <label>
                         <input type="checkbox" name="sugar" checked>
+                        <span></span>
                         сахарные присыпки
                     </label>
                     <label>
                         <input type="checkbox" name="fruit">
+                        <span></span>
                         фрукты
                     </label>
                     <label>
                         <input type="checkbox" name="syrup">
+                        <span></span>
                         сиропы
                     </label>
                     <label>
                         <input type="checkbox" name="jam">
+                        <span></span>
                         джемы
                     </label>
                 </fieldset>
-                <button type="submit">Применить</button>
+                <button class="sorting-btn" type="submit">Применить</button>
             </form>
         </section>
  
