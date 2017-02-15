@@ -66,7 +66,6 @@ img {
 	position: relative;
 	display: inline-block;
 	vertical-align: top;
-	margin-right: 10px;
 	text-decoration: none;
 	font-size: 16px;
 	line-height: 18px;
@@ -127,7 +126,7 @@ img {
 .user-block a {
 	display: inline-block;
 	vertical-align: top;
-	margin-right: 10px;
+	margin-right: 6px;
 	padding: 8px 14px;
 	background-color: rgba(255, 255,255, 0.2);
 	border-radius: 16px;
@@ -612,13 +611,13 @@ a.vk-ico::before {
 /****Слайдер ****/
 .slider {
 	height: 535px;
-	margin-bottom: 40px;
+	margin-bottom: 35px;
 	position: relative;
 }
 
 .shedule-phone {
 	position: absolute;
-	top: 5px;
+	top: -5px;
 	right: 0;
 	width: 267px;
 	text-align: right;
@@ -630,7 +629,7 @@ a.vk-ico::before {
 	font-size: 14px;
 	line-height: 16px;
 	margin-top: 0;
-	margin-bottom: 9px;
+	margin-bottom: 5px;
 }
 
 .phone {
@@ -692,8 +691,8 @@ a.vk-ico::before {
 
 .switch-slide-label {
 	position: absolute;
-	bottom: 23px;
-	left: 0;
+	bottom: 20px;
+	left: 1px;
 }
 
 body > input[type="radio"] {
@@ -715,7 +714,7 @@ body > input[type="radio"] {
 
 .slider-img {
 	position: absolute;
-	top: 10px;
+	top: 5px;
 	left: 50%;
 	margin-left: -323px;
 }
@@ -723,8 +722,8 @@ body > input[type="radio"] {
 .slider-title {
 	position: absolute;
 	width: 796px;
-	top: 260px;
-	left: 177px;
+	top: 255px;
+	left: 183px;
 	text-align: center;
 	color: #ffffff;
 	font-size: 60px;
@@ -734,9 +733,9 @@ body > input[type="radio"] {
 
 .slider-btn {
 	position: absolute;
-	bottom: 0;
+	bottom: 5px;
 	left: 50%;
-	margin-left: -140px;
+	margin-left: -139px;
 	font-size: 32px;
 	line-height: 44px;
 	padding: 11px 42px;
@@ -756,6 +755,8 @@ body > input[type="radio"] {
 	box-sizing: border-box;
 	width: 560px;
 	padding: 22px;
+	padding-top: 15px;
+	padding-left: 20px;
 	border-radius: 15px;
 }
 
@@ -795,7 +796,7 @@ body > input[type="radio"] {
 .best-icecream {
 	display: flex;
 	justify-content: space-between;
-	margin-bottom: 40px;
+	margin-bottom: 38px;
 }
 
 .best-icecream-item {
@@ -806,6 +807,7 @@ body > input[type="radio"] {
 
 .best-icecream p {
 	margin: 0;
+	padding-top: 7px;
 	text-align: center;
 }
 
@@ -831,7 +833,7 @@ body > input[type="radio"] {
 
 .price {
 	position: absolute;
-	top: 214px;
+	top: 210px;
 	left: 0;
 	z-index: 6;
 	cursor: pointer;
@@ -883,8 +885,7 @@ body > input[type="radio"] {
 	position: relative;
 	box-sizing: border-box;
 	width: 540px;
-	padding-top: 18px;
-	padding-left: 55px;
+	padding-left: 58px;
 	margin-right: 26px;
 }
 
@@ -893,7 +894,7 @@ body > input[type="radio"] {
 	content: "";
 	width: 49px;
 	height: 49px;
-	top: 0;
+	top: -12px;
 	left: 0;
 	background: transparent url("../img/sprite-ico.png") no-repeat;
 }
@@ -926,6 +927,10 @@ body > input[type="radio"] {
 	margin-bottom: 40px;
 }
 
+.blog-subscribe p {
+	margin: 0;
+}
+
 .blog,
 .subscribe {
 	box-sizing: border-box;
@@ -939,7 +944,9 @@ body > input[type="radio"] {
 	background: #ffffff url("../img/blog-bg.jpg");
 }
 
-.blog-news {
+.blog-subscribe .blog-news {
+	margin-top: 18px;
+	margin-bottom: 5px;
 	font-size: 16px;
 	line-height: 22px;
 	font-weight: 500;
