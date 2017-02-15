@@ -335,7 +335,19 @@ img {
 }
 
 .breadcrumbs-navigation li {
+	position: relative;
 	padding-right: 22px;
+}
+
+.breadcrumbs-navigation li:not(:last-child)::before {
+	position: absolute;
+	content: "»";
+	top: 4px;
+	right: 7px;
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: 400;
+	color: #ffffff;
 }
 
 .breadcrumbs-navigation a {
@@ -1459,6 +1471,11 @@ body > input[type="radio"] {
 .icecream-img, .icecream-description {
 	position: relative;
 	z-index: 4;
+}
+
+.icecream-item:hover a,
+.best-icecream-item:hover a {
+	border-bottom: transparent;
 }
 
 /*Блок - переключатль страниц*/
