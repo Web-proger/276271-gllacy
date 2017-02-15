@@ -147,7 +147,7 @@ img {
 
 .form-style input {
 	box-sizing: border-box;
-	height: 42px;
+	height: 44px;
 	display: block;
 	padding: 10px 15px;
 	margin: 20px auto;
@@ -196,8 +196,8 @@ img {
 	z-index: 1;
 	padding-left: 15px;
 	padding-right: 15px;
-	top: 52px;
-	right: 237px;
+	top: 53px;
+	right: 227px;
 	background-color: #f8f7f4;
 	box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
 	border-radius: 5px;
@@ -214,8 +214,8 @@ img {
 .entry-menu-popup {
 	display: none;
 	position: absolute;
-	top: 52px;
-	right: 132px;
+	top: 53px;
+	right: 124px;
 	z-index: 1;
 	padding-bottom: 20px;
 	padding-left: 19px;
@@ -258,8 +258,6 @@ img {
 	font-weight: 400;
 	color: #323232;
 	text-decoration: underline;
-/*	border-bottom: 1px solid rgba(50, 50, 50, 0.3);*/
-/*	border-radius: 0;*/
 }
 
 /*** end experemental ****/
@@ -529,10 +527,11 @@ a.vk-ico::before {
 .sub-menu {
 	display: none;
 	position: absolute;
-	left: 0;
+	z-index: 1;
+	left: -7px;
 	top: 36px;
 	padding: 0;
-	width: 152px;
+	width: 143px;
 	overflow: hidden;
 	list-style: none;
 	background-color: #f8f7f4;
@@ -541,7 +540,7 @@ a.vk-ico::before {
 }
 
 .sub-menu a {
-	padding: 6px 0;
+	padding: 8px 0;
 	font-size: 14px;
 	line-height: 16px;
 	font-weight: 400;
@@ -574,6 +573,11 @@ a.vk-ico::before {
 
 .sub-menu-section {
 	position: relative;
+}
+
+.sub-menu .sub-menu-section {
+	padding-top: 2px;
+	padding-bottom: 5px;
 }
 
 .sub-menu .sub-menu-section:hover {
@@ -1558,8 +1562,8 @@ body > input[type="radio"] {
 /*** Модальные окна ***/
 /*-- Форма обратной связи --*/
 .modal-feedback {
-	position: relative;
-	display: block;
+	position: absolute;
+	display: none;
 	position: fixed;
 	top: 340px;
 	left: 0;
