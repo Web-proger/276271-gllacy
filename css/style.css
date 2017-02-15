@@ -523,7 +523,7 @@ a.vk-ico::before {
 	display: none;
 	position: absolute;
 	left: 0;
-	top: 32px;
+	top: 36px;
 	padding: 0;
 	width: 152px;
 	overflow: hidden;
@@ -590,10 +590,26 @@ a.vk-ico::before {
 .menu-catalog:hover .sub-menu {
 	display: block;
 	z-index: 5;
-} 
+}
+
+.menu-catalog::after,
+.search::after,
+.entry-menu::after,
+.cart-full::after {
+	position: absolute;
+	content: "";
+	top: 28px;
+	right: 0;
+	width: 100px;
+	height: 10px;
+	background-color: transparent;
+}
+
+.cart-full::after {
+	width: 140px;
+}
+
 /****Слайдер ****/
-
-
 .slider {
 	height: 535px;
 	margin-bottom: 40px;
@@ -818,6 +834,7 @@ body > input[type="radio"] {
 	top: 214px;
 	left: 0;
 	z-index: 6;
+	cursor: pointer;
 }
 
 .price-number {
@@ -962,8 +979,9 @@ body > input[type="radio"] {
 
 .subscribe input {
 	margin-right: 9px;
+	padding-left: 15px;
 	height: 44px;
-	width: 360px;
+	width: 345px;
 	font-family: "Roboto", "Arial", sans-serif;
 	font-size: 16px;
 	line-height: 24px;
