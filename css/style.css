@@ -366,8 +366,8 @@ img {
 .main-footer {
 	display: flex;
 	justify-content: space-between;
-	padding-top: 35px;
-	padding-bottom: 23px;
+	padding-top: 19px;
+	padding-bottom: 26px;
 }
 
 .main-footer a {
@@ -381,8 +381,12 @@ img {
 	align-items: center;
 }
 
+.footer-info {
+	width: 340px;
+}
+
 .footer-social {
-	width: 245px;
+	width: 195px;
 	font-size: 0;
 }
 
@@ -394,6 +398,10 @@ img {
 	height: 38px;
 	background-color: #c2cec7;
 	border-radius: 19px;
+}
+
+.footer-social a:last-child {
+	margin-right: 0;
 }
 
 .footer-social a::before {
@@ -465,7 +473,7 @@ a.vk-ico::before {
 }
 
 .footer-copyright {
-	width: 195px;
+	width: 190px;
 	color: #fefefe;
 	font-size: 12px;
 	line-height: 18px;
@@ -721,9 +729,9 @@ body > input[type="radio"] {
 
 .slider-title {
 	position: absolute;
-	width: 796px;
+	width: 672px;
 	top: 255px;
-	left: 183px;
+	left: 238px;
 	text-align: center;
 	color: #ffffff;
 	font-size: 60px;
@@ -833,7 +841,7 @@ body > input[type="radio"] {
 
 .price {
 	position: absolute;
-	top: 210px;
+	top: 208px;
 	left: 0;
 	z-index: 6;
 	cursor: pointer;
@@ -852,6 +860,7 @@ body > input[type="radio"] {
 }
 
 .price-unit {
+	margin-left: -5px;
 	font-size: 30px;
 	line-height: 45px;
 	font-weight: 700;
@@ -864,6 +873,7 @@ body > input[type="radio"] {
 	box-sizing: border-box;
 	display: flex;
 	flex-wrap: wrap;
+	align-content: space-between;
 	padding: 24px 20px;
 	margin-bottom: 40px;
 	background: #ecdfc3 url("../img/wafer-bg.jpg") no-repeat;
@@ -873,7 +883,6 @@ body > input[type="radio"] {
 
 .features h3 {
 	margin: 0;
-	margin-bottom: 8px;
 	width: 999px;
 	font-size: 24px;
 	line-height: 30px;
@@ -929,6 +938,7 @@ body > input[type="radio"] {
 
 .blog-subscribe p {
 	margin: 0;
+	margin-bottom: 36px;
 }
 
 .blog,
@@ -985,10 +995,10 @@ body > input[type="radio"] {
 }
 
 .subscribe input {
-	margin-right: 9px;
+	margin-right: 5px;
 	padding-left: 15px;
-	height: 44px;
-	width: 345px;
+	height: 40px;
+	width: 352px;
 	font-family: "Roboto", "Arial", sans-serif;
 	font-size: 16px;
 	line-height: 24px;
@@ -1014,7 +1024,7 @@ body > input[type="radio"] {
 .map-contacts {
 	position: absolute;
 	right: 27px;
-	top: 67px;
+	top: 63px;
 	box-sizing: border-box;
 	width: 302px;
 	padding: 27px 25px;
@@ -1026,7 +1036,7 @@ body > input[type="radio"] {
 
 .map-contacts p {
 	margin-top: 0;
-	margin-bottom: 17px;
+	margin-bottom: 18px;
 	font-size: 14px;
 	line-height: 20px;
 	font-weight: 400;
@@ -1041,6 +1051,7 @@ body > input[type="radio"] {
 .map-contacts button {
 	display: block;
 	margin: 0 auto;
+	margin-top: 30px;
 }
 
 	/*-- catalog.html (Каталог) --*/
@@ -1547,9 +1558,9 @@ body > input[type="radio"] {
 /*** Модальные окна ***/
 /*-- Форма обратной связи --*/
 .modal-feedback {
-	display: none;
+	display: block;
 	position: fixed;
-	top: 25%;
+	top: 340px;
 	left: 0;
 	right: 0;
 	box-sizing: border-box;
@@ -1562,20 +1573,22 @@ body > input[type="radio"] {
 }
 
 .modal-feedback-caption {
+	margin-top: 16px;
 	font-size: 24px;
 	line-height: 28px;
 }
 
 .modal-feedback input {
 	width: 267px;
-	margin: 20px 0;
+	margin: 21px 0;
 }
 
 .modal-feedback textarea {
 	box-sizing: border-box;
 	width: 100%;
 	height: 155px;
-	margin-bottom: 25px;
+	margin-bottom: 19px;
+	padding: 10px 15px;
 	resize: none;
 	border: 1px solid #c7c6c5;
 }
