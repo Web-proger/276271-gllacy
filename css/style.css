@@ -1617,7 +1617,7 @@ body > input[type="radio"] {
 /*-- Форма обратной связи --*/
 .modal-feedback {
 	position: absolute;
-	display: none;
+	display: block;
 	position: fixed;
 	top: 340px;
 	left: 0;
@@ -1652,6 +1652,26 @@ body > input[type="radio"] {
 	border: 1px solid #c7c6c5;
 }
 
+.modal-feedback .field-wrap {
+	position: relative;
+}
+
+.modal-feedback label {
+	position: absolute;
+	top: 10px;
+	left: 16px;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+	color: #999999;
+}
+
+/*Доделать форму*/
+.modal-feedback input:hover label,
+.form-style textarea:focus label {
+	top: -25px;
+}
+
 .form-style textarea:hover {
 	border: 2px solid #c7c6c5;
 }
@@ -1660,7 +1680,7 @@ body > input[type="radio"] {
 	border: 2px solid #8fbdec;
 }
 
-.modal-feedback div {
+.modal-feedback .btn-wrap {
 	text-align: right;
 	margin-bottom: 27px;
 }

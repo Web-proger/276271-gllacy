@@ -234,10 +234,19 @@
             <div class="modal-feedback">
                 <h2 class="modal-feedback-caption">Мы обязательно вам ответим!</h2>
                 <form class="form-style" action="#" method="post">
-                    <input type="text" name="name" placeholder="Как вас зовут?">
-                    <input type="text" name="email" placeholder="Ваша почта для ответа?">
-                    <textarea placeholder="Напишите что-нибудь..."></textarea>
-                    <div>
+                    <div class="field-wrap">
+                        <input type="text" name="name" id="name" placeholder="">
+                        <label for="name">Как вас зовут?</label>    
+                    </div>
+                    <div class="field-wrap">
+                        <input type="text" name="email" id="email" placeholder="">
+                        <label for="email">Ваша почта для ответа?</label>                      
+                    </div>
+                    <div class="field-wrap">
+                        <textarea id="feedback"  placeholder=""></textarea>
+                        <label for="feedback">Напишите что-нибудь...</label>                        
+                    </div>
+                    <div class="btn-wrap">
                         <button class="modal-feedback-sendbtn btn" type="submit">Отправить</button>   
                     </div>
                 </form>
