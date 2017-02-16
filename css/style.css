@@ -874,6 +874,7 @@ body > input[type="radio"] {
 .price-img {
 	position: relative;
 	top: 5px;
+	left: -3px;
 }
 
 .price-unit {
@@ -1431,8 +1432,13 @@ body > input[type="radio"] {
 	min-width: 415px;
 }
 
-.sorting-filler {
+.sorting .sorting-filler {
 	min-width: 702px;
+	padding-left: 15px;
+}
+
+.sorting-filler label {
+	margin-right: 18px;
 }
 
 
@@ -1459,10 +1465,11 @@ body > input[type="radio"] {
 	position: relative;
 	z-index: 5;
 	width: 267px;
-	margin-bottom: 40px;
+	margin-bottom: 37px;
 }
 
 .icecream-item p {
+	padding-top: 8px;
 	margin: 0;
 	text-align: center;
 }
