@@ -858,7 +858,7 @@ body > input[type="radio"] {
 
 .price {
 	position: absolute;
-	top: 208px;
+	top: 209px;
 	left: 0;
 	z-index: 6;
 	cursor: pointer;
@@ -1496,19 +1496,20 @@ body > input[type="radio"] {
 	border-radius: 5px;
 }
 
-.substrate-btn {
+.substrate .substrate-btn {
 	display: block;
 	position: absolute;
 	z-index: 2;
 	bottom: 22px;
 	left: 0;
 	right: 0;
-	width: 154px;
+	width: 168px;
 	margin: 0 auto;
-}
-
-.substrate .substrate-btn {
-	border-bottom: transparent;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 700;
+	padding: 10px 20px;
+	border-bottom: transparent;	
 }
 
 .icecream-item .substrate .substrate-btn:hover {
@@ -1527,20 +1528,12 @@ body > input[type="radio"] {
 	color: #ffffff;
 }
 
-
-.icecream-item:hover {
-	z-index: 10;
-}
-
+.icecream-item:hover,
 .best-icecream-item:hover {
 	z-index: 10;
 }
 
-.icecream-item:hover .substrate {
-	display: block;
-	z-index: 1;
-}
-
+.icecream-item:hover .substrate,
 .best-icecream-item:hover .substrate {
 	display: block;
 	z-index: 1;
@@ -1558,7 +1551,10 @@ body > input[type="radio"] {
 
 /*Блок - переключатль страниц*/
 .pagination {
+	font-size: 0;
 	text-align: right;
+	padding-bottom: 30px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .pagination a {
@@ -1566,6 +1562,7 @@ body > input[type="radio"] {
 	display: inline-block;
 	width: 26px;
 	height: 26px;
+	margin-right: 1px;
 	border-radius: 14px;
 	text-decoration: none;
 	color: #ffffff;
