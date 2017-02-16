@@ -393,16 +393,18 @@ img {
 
 .footer-social {
 	width: 185px;
+	margin-top: 8px;
 	font-size: 0;
 }
 
 .footer-social a {
 	position: relative;
+	box-sizing: border-box;
 	display: inline-block;
 	margin-right: 11px;
 	width: 38px;
 	height: 38px;
-	background-color: #c2cec7;
+	border: 3px solid #c2cec7;
 	border-radius: 19px;
 }
 
@@ -413,8 +415,8 @@ img {
 .footer-social a::before {
 	position: absolute;
 	content: "";
-	top: 4px;
-	left: 3px;
+	top: 0px;
+	left: 0px;
 	width: 32px;
 	height: 32px;
 	border-radius: 16px;
@@ -434,6 +436,15 @@ a.fb-ico::before {
 a.vk-ico::before {
 	background-position: -199px -62px;
 }
+
+.footer-social a:hover {
+	border-color: #dae2de;
+}
+
+.footer-social a:active {
+	border-color: #dae2de;
+}
+
 
 .footer-social a:hover::before {
 	opacity: 1;
@@ -1331,6 +1342,7 @@ body > input[type="radio"] {
 	top: 8px;
 	left: 34px;
 	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+	cursor: pointer;
 }
 
 .sorting-price .range-line::before,
@@ -1354,6 +1366,7 @@ body > input[type="radio"] {
 	top: 8px;
 	left: 132px;
 	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+	cursor: pointer;
 }
 
 .sorting-fatness input:checked + span::before {
