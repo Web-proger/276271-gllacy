@@ -164,6 +164,10 @@ img {
 	font-weight: 400;
 	border: 1px solid #c7c6c5;
 	border-radius: 5px;
+	font-family: "Roboto", "Arial", sans-serif;
+	font-size: 16px;
+	line-height: 24px;	
+	color: #323232;
 
 }
 
@@ -207,7 +211,7 @@ img {
 	padding-left: 15px;
 	padding-right: 15px;
 	top: 36px;
-	right: 0px;
+	right: 7px;
 	background-color: #f8f7f4;
 	box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
 	border-radius: 5px;
@@ -221,7 +225,7 @@ img {
 	display: none;
 	position: absolute;
 	top: 36px;
-	right: 0px;
+	right: 7px;
 	z-index: 1;
 	padding-bottom: 20px;
 	padding-left: 19px;
@@ -1637,6 +1641,15 @@ body > input[type="radio"] {
 	line-height: 28px;
 }
 
+.modal-feedback input,
+.modal-feedback textarea {
+	font-family: "Roboto", "Arial", sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 700;
+	color: #323232;
+}
+
 .modal-feedback input {
 	width: 267px;
 	margin: 21px 0;
@@ -1667,9 +1680,19 @@ body > input[type="radio"] {
 }
 
 /*Доделать форму*/
-.modal-feedback input:hover label,
-.form-style textarea:focus label {
-	top: -25px;
+.modal-feedback  input:focus + label,
+.modal-feedback  textarea:focus + label {
+	font-size: 11px;
+	line-height: 13px;
+	font-weight: 400px;
+	color: #5b9ddf;
+	animation: move 0.5s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes move {
+	0% {transform: translateY(0);}
+	100% {transform: translateY(-25px);}	
 }
 
 .form-style textarea:hover {
@@ -1680,6 +1703,7 @@ body > input[type="radio"] {
 	border: 2px solid #8fbdec;
 }
 
+/**************************/
 .modal-feedback .btn-wrap {
 	text-align: right;
 	margin-bottom: 27px;
@@ -1687,14 +1711,16 @@ body > input[type="radio"] {
 
 .modal-feedback-close {
 	position: absolute;
-	top: 10px;
-	right: 10px;
+	top: 16px;
+	right: 16px;
 	width: 17px;
 	height: 17px;
+	padding: 0;
 	border: none;
 	outline: none;
 	font-size: 0;
 	background-color: transparent;
+	cursor: pointer;
 }
 
 .modal-feedback-close::after {
@@ -1702,8 +1728,8 @@ body > input[type="radio"] {
 	content: "";
 	width: 2px;
 	height: 23px;
-	top: 2px;
-	left: 2px;
+	top: -3px;
+	left: 8px;
 	background-color: #000000;
 	transform: rotate(45deg);
 }
@@ -1713,8 +1739,8 @@ body > input[type="radio"] {
 	content: "";
 	width: 2px;
 	height: 23px;
-	top: 2px;
-	left: 2px;
+	top: -3px;
+	left: 8px;
 	background-color: #000000;
 	transform: rotate(-45deg);
 }
