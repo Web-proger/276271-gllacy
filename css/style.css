@@ -771,6 +771,10 @@ body > input[type="radio"] {
 	font-weight: 700;
 }
 
+.slide-3 .slider-title {
+	width: 650px;
+}
+
 .slider-btn {
 	position: absolute;
 	bottom: 5px;
@@ -1623,12 +1627,13 @@ body > input[type="radio"] {
 	display: none;
 	position: fixed;
 	z-index: 20;
-	top: 340px;
+	top: 50%;
 	left: 0;
 	right: 0;
 	box-sizing: border-box;
 	width: 477px;	
 	margin: 0 auto;
+	margin-top: -225px;
 	padding: 0 25px;
 	background-color: #f8f7f4;
 	box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
@@ -1754,71 +1759,14 @@ body > input[type="radio"] {
 	width: 100%;
 	height: 100%;
 	z-index: 15;
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: rgba(0, 0, 0, 0.3);
 }
 
-/***** - Для тестирования - *****/
-/***--Ободка главных модулей--***/
-/*header,
-main,
-footer {
-	outline: 3px solid blue;
-}*/
-
-/**Ободка главных модулей**/
-/*.container {
-	outline: 2px solid gray;
-}*/
-
-/**Ободка блоков "второй" вложенности**/
-/*.slider,
-.promo,
-.best-icecream,
-.catalog-icecream,
-.features,
-.blog-subscribe,
-.pagination,
-.sorting {
-	outline: 2px solid green;
-}*/
-
-/**Ободка блоков "третий" вложенности**/
-/*.logo,
-.main-navigation,
-.user-block,
-.promo-left,
-.promo-right,
-.best-icecream-item,
-.icecream-item,
-.shedule-phone,
-.blog,
-.subscribe,
-.footer-social,
-.footer-info,
-.footer-copyright,
-.features-item,
-.breadcrumbs,
-.shedule-phone {
-	outline: 1px solid pink;
-}*/
-
-/*sprite temp
-.sprite {
-    background-image: url(spritesheet.png);
-    background-repeat: no-repeat;
-    display: block;
+/* Классы для JS */
+.modal-feedback-open {
+	display: block;
 }
 
-.sprite-cart {
-    width: 21px;
-    height: 20px;
-    background-position: -88px -10px;
+.layout-visible {
+	display: block;
 }
-
-.sprite-cart-full {
-    width: 21px;
-    height: 20px;
-    background-position: -129px -10px;
-}
-
-*/
