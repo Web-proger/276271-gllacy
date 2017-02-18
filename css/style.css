@@ -52,8 +52,9 @@ img {
 /*** Стили для форм ***/
 .form-style {
 	font-family: "Roboto", "Arial", sans-serif;
-	font-size: 16px;
-	line-height: 24px;	
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: 400;	
 	color: #323232;
 }
 
@@ -63,12 +64,12 @@ img {
 	display: block;
 	padding: 10px 15px;
 	margin: 20px auto;
-	font-weight: 400;
 	border: 1px solid #c7c6c5;
 	border-radius: 5px;
 	font-family: "Roboto", "Arial", sans-serif;
-	font-size: 16px;
+	font-size: 14px;
 	line-height: 24px;	
+	font-weight: 400;
 	color: #323232;
 
 }
@@ -847,6 +848,7 @@ body > input[type="radio"] {
 	margin-bottom: 15px;
 	font-size: 35px;
 	line-height: 41px;
+	font-weight: 700;
 	color: #ffffff;
 }
 .promo p {
@@ -1066,7 +1068,7 @@ body > input[type="radio"] {
 	font-size: 16px;
 	line-height: 24px;
 	font-weight: 400;
-	color: #999999;
+	color: #323232;
 	border: 1px solid rgba(178, 178, 178, 0.5);
 	border-radius: 6px;
 }
@@ -1159,7 +1161,8 @@ body > input[type="radio"] {
 	z-index: 1;
 	box-sizing: border-box;
 	width: 540px;
-	padding: 19px 15px;
+	padding: 7px 15px;
+	padding-bottom: 25px;
 	background-color: #f8f7f4;
 	border-radius: 5px;	
 	box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
@@ -1189,13 +1192,14 @@ body > input[type="radio"] {
 
 .goods-carts hr {
 	display: block;
-	margin-top: 1px;
-	margin-bottom: 16px;
+	margin-top: 2px;
+	margin-bottom: 12px;
 }
 
 .goods-carts-line td {
 	padding-top: 10px;	
 	padding-bottom: 10px;
+	vertical-align: middle;
 }
 
 .view-full-cart:hover .goods-carts{
@@ -1203,12 +1207,12 @@ body > input[type="radio"] {
 }
 
 .goods-carts-line td:nth-child(1) {
-	width: 35px;
+	width: 10px;
 	text-align: center;
 }
 
 .goods-carts-line td:nth-child(2) {
-	width: 55px;
+	width: 50px;
 	text-align: center;
 }
 
@@ -1218,7 +1222,8 @@ body > input[type="radio"] {
 }
 
 .goods-carts-line td:nth-child(4) {
-	width: 100px;
+	width: 110px;
+	padding-left: 15px;
 }
 
 .goods-carts-line td:nth-child(5) {
@@ -1228,6 +1233,9 @@ body > input[type="radio"] {
 
 .goods-carts .btn {
 	margin-right: 0;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 700;
 }
 
 .goods-carts .block-total-price {
