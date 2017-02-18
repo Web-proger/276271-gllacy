@@ -84,7 +84,7 @@ img {
 /*** Шапка (header) ***/
 .main-header {
 	display: -ms-flexbox;
-	display: flex;
+		display: flex;
 	-ms-flex-align: start;
 	    align-items: flex-start;
 	padding-top: 7px;
@@ -99,7 +99,7 @@ img {
 /*** Главное меню ***/
 .main-navigation .main-menu {
 	display: -ms-flexbox;
-	display: flex;
+		display: flex;
 	list-style: none;
 	padding: 0;
 }
@@ -159,7 +159,7 @@ img {
 /*** Блок пользователя ***/
 .user-block {
 	display: -ms-flexbox;
-	display: flex;
+		display: flex;
 	position: relative;
 	padding: 16px;
 	padding-right: 0;
@@ -260,6 +260,7 @@ img {
 
 .entry-menu-link {
 	display: inline-block;
+	vertical-align: top;
 	width: 119px;
 }
 
@@ -337,7 +338,7 @@ img {
 /*** breadcrumbs  ***/
 .content-header {
 	display: -ms-flexbox;
-	display: flex;
+		display: flex;
 	-ms-flex-pack: justify;
 	    justify-content: space-between;
 	-ms-flex-align: end;
@@ -384,7 +385,7 @@ img {
 /*** Подвал (footer) ***/
 .main-footer {
 	display: -ms-flexbox;
-	display: flex;
+		display: flex;
 	-ms-flex-pack: justify;
 	    justify-content: space-between;
 	padding-top: 19px;
@@ -399,7 +400,7 @@ img {
 .footer-social,
 .footer-info {
 	display: -ms-flexbox;
-	display: flex;
+		display: flex;
 	-ms-flex-align: center;
 	    align-items: center;
 }
@@ -418,6 +419,7 @@ img {
 	position: relative;
 	box-sizing: border-box;
 	display: inline-block;
+	vertical-align: top;
 	margin-right: 11px;
 	width: 38px;
 	height: 38px;
@@ -758,6 +760,7 @@ body > input[type="radio"] {
 
 .switch {
 	display: inline-block;
+	vertical-align: baseline;
 	width: 18px;
 	height: 18px;
 	border: 3px solid #ffffff;
@@ -806,7 +809,7 @@ body > input[type="radio"] {
 /*-Промо блок-*/
 .promo {
 	display: -ms-flexbox;
-	display: flex;
+		display: flex;
 	-ms-flex-pack: justify;
 	    justify-content: space-between;
 	margin-bottom: 40px;
@@ -857,7 +860,7 @@ body > input[type="radio"] {
 /*-Блок Хит продаж-*/
 .best-icecream {
 	display: -ms-flexbox;
-	display: flex;
+		display: flex;
 	-ms-flex-pack: justify;
 	    justify-content: space-between;
 	margin-bottom: 38px;
@@ -928,7 +931,7 @@ body > input[type="radio"] {
 .features {
 	box-sizing: border-box;
 	display: -ms-flexbox;
-	display: flex;
+		display: flex;
 	-ms-flex-wrap: wrap;
 	    flex-wrap: wrap;
 	-ms-flex-line-pack: justify;
@@ -990,7 +993,7 @@ body > input[type="radio"] {
 /*-Блок- блог и подписка-*/
 .blog-subscribe {
 	display: -ms-flexbox;
-	display: flex;
+		display: flex;
 	-ms-flex-pack: justify;
 	    justify-content: space-between;
 	margin-bottom: 40px;
@@ -1110,6 +1113,7 @@ body > input[type="radio"] {
 
 .map-contacts b.phone {
 	display: inline-block;
+	vertical-align: top;
 	padding-top: 5px;
 }
 
@@ -1233,7 +1237,7 @@ body > input[type="radio"] {
 /*Блок сортировки*/
 .sorting form {
 	display: -ms-flexbox;
-	display: flex;
+		display: flex;
 	-ms-flex-wrap: wrap;
 	    flex-wrap: wrap;
 }
@@ -1321,6 +1325,7 @@ body > input[type="radio"] {
 .sorting-filler label {
 	position: relative;
 	display: inline-block;
+	vertical-align: top;
 	padding-left: 31px;
 	margin-right: 16px;
 }
@@ -1500,7 +1505,7 @@ body > input[type="radio"] {
 /*Блок - каталог мароженного*/
 .catalog-icecream {
 	display: -ms-flexbox;
-	display: flex;
+		display: flex;
 	-ms-flex-wrap: wrap;
 	    flex-wrap: wrap;
 	-ms-flex-pack: justify;
