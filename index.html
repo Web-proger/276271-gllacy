@@ -8,10 +8,13 @@
         <link href="css/style.css" rel="stylesheet">
     </head>
     <body class="index-page">
-        <input class="slide1-btn" type="radio" id="slide-1" name="slide" checked>   
+        <input class="slide1-btn" type="radio" id="slide-1" name="slide" checked>
         <input class="slide2-btn" type="radio" id="slide-2" name="slide">
-        <input class="slide3-btn" type="radio" id="slide-3" name="slide">                
+        <input class="slide3-btn" type="radio" id="slide-3" name="slide">
         <div class="global-wrapper">
+
+        
+            <!-- Шапка сайта -->
             <header class="main-header container">
                 <a class="logo-link">
                     <img class="logo" src="img/logo-gllacy.png" alt="Логотип Глэйси" width="154" height="64">
@@ -29,17 +32,17 @@
                             </ul>
                         </li>
                         <li><a href="#">Доставка и оплата</a></li>
-            			<li><a href="#">О Компании</a></li>
-            		</ul>
-            	</nav>
-            	<div class="user-block">
+                        <li><a href="#">О Компании</a></li>
+                    </ul>
+                </nav>
+                <div class="user-block">
                     <div class="search-block">
                         <a class="search" href="#">Поиск</a>
                         <div class="search-popup">
                             <form class="form-style" action="#" method="post">
                                 <input type="text" placeholder="Что ищем?">
                             </form>
-                        </div>                          
+                        </div>
                     </div>
                     <div class="entry-menu-block">
                         <a class="entry-menu" href="#">Вход</a>
@@ -50,15 +53,15 @@
                                 <button class="btn" type="submit">Войти</button> 
                                 <div class="entry-menu-link link-hover link-active">
                                     <a href="#">Забыли пароль?</a>
-                                    <a href="#">Новая регистрация</a>     
-                                </div>                                            
-                            </form>                
-                        </div>                     
+                                    <a href="#">Новая регистрация</a>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                     <div class="cart-block">
                         <a class="cart" href="#">Пусто</a>
                     </div>
-            	</div>
+                </div>
             </header>
 
 
@@ -66,11 +69,11 @@
             <main class="container">
                 <!-- Слайдер. Пока с 1ой страницей -->
                 <!-- Время и телефон видимо абсолюно позиционировны -->
-            	<div class="slider">
-            		<div class="shedule-phone">
-            			<p class="shedule">С 10 до 20, ежедневно</p>
-            			<p class="phone">8 812 450-25-25</p>
-            		</div>
+                <div class="slider">
+                    <div class="shedule-phone">
+                        <p class="shedule">С 10 до 20, ежедневно</p>
+                         <p class="phone">8 812 450-25-25</p>
+                    </div>
                     <div class="slide-1">
                          <img class="slider-img" src="img/slide1.png" alt="первый слайд с мороженым" width="647" height="584">
                         <p class="slider-title"><b>Крем-брюле и пломбир с малиновым джемом</b></p>
@@ -90,9 +93,9 @@
                     <div class="switch-slide-label">
                         <label class="switch" for="slide-1"></label>
                         <label class="switch" for="slide-2"></label>
-                        <label class="switch" for="slide-3"></label>                
+                        <label class="switch" for="slide-3"></label>
                     </div>
-            	</div>
+                </div>
 
                 <!-- Промо блок -->
                 <section class="promo">
@@ -104,7 +107,7 @@
                     <div class="promo-right">
                         <strong>Шоколадки даром!</strong>
                         <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-                        <a class="btn" href="#">Хочу шоколадки!</a>                
+                        <a class="btn" href="#">Хочу шоколадки!</a>
                     </div>
                 </section>
 
@@ -144,7 +147,7 @@
                         </div>
                         <div class="substrate">
                             <a class="btn substrate-btn" href="#">Быстрый просмотр</a>
-                        </div>               
+                        </div>
                     </div>
                     <div class="best-icecream-item">
                         <img class="icecream-img" src="img/icecream4.png" alt="Хит продаж!" width="267" height="267">
@@ -238,21 +241,21 @@
                 <form class="form-style" action="#" method="post">
                     <div class="field-wrap">
                         <input type="text" name="name" id="name" placeholder="">
-                        <label for="name">Как вас зовут?</label>    
+                        <label for="name">Как вас зовут?</label>
                     </div>
                     <div class="field-wrap">
                         <input type="text" name="email" id="email" placeholder="">
-                        <label for="email">Ваша почта для ответа?</label>                      
+                        <label for="email">Ваша почта для ответа?</label>
                     </div>
                     <div class="field-wrap">
                         <textarea id="feedback"  placeholder=""></textarea>
-                        <label for="feedback">Напишите что-нибудь...</label>                        
+                        <label for="feedback">Напишите что-нибудь...</label>
                     </div>
                     <div class="btn-wrap">
-                        <button class="modal-feedback-sendbtn btn" type="submit">Отправить</button>   
+                        <button class="modal-feedback-sendbtn btn" type="submit">Отправить</button>
                     </div>
                 </form>
-                <button type="button" class="modal-feedback-close">Закрыть окно</button>    
+                <button type="button" class="modal-feedback-close">Закрыть окно</button>
             </div>
         </div>
         <script src="js/script.js"></script>
