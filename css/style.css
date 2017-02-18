@@ -17,8 +17,12 @@ h1 {
 }
 
 h2 {
-	/*h2 в разметке отсутствует*/
+	font-size: 24px;
+	line-height: 28px;
+	color: #323232;
+	font-weight: 700;
 }
+
 /* Взаимодействие со ссылками */
 .link-hover a[href]:hover {
 	color: #ffbc9e;
@@ -45,6 +49,38 @@ img {
 	margin-right: auto;
 }
 
+/*** Стили для форм ***/
+.form-style {
+	font-family: "Roboto", "Arial", sans-serif;
+	font-size: 16px;
+	line-height: 24px;	
+	color: #323232;
+}
+
+.form-style input {
+	box-sizing: border-box;
+	height: 44px;
+	display: block;
+	padding: 10px 15px;
+	margin: 20px auto;
+	font-weight: 400;
+	border: 1px solid #c7c6c5;
+	border-radius: 5px;
+	font-family: "Roboto", "Arial", sans-serif;
+	font-size: 16px;
+	line-height: 24px;	
+	color: #323232;
+
+}
+
+.form-style input:hover {
+	border: 2px solid #c7c6c5;
+}
+
+.form-style input:focus {
+	border: 2px solid #8fbdec;
+}
+
 /*** Шапка (header) ***/
 .main-header {
 	display: flex;
@@ -58,6 +94,7 @@ img {
 	height: 64px;	
 }
 
+/*** Главное меню ***/
 .main-navigation .main-menu {
 	display: flex;
 	list-style: none;
@@ -97,7 +134,6 @@ img {
 	box-shadow: none;
 }
 
-
 .main-navigation a::before {
 	position: absolute;
 	content: "";
@@ -117,7 +153,7 @@ img {
 	border-radius: 13px;
 }
 
-
+/*** Блок пользователя ***/
 .user-block {
 	display: flex;
 	position: relative;
@@ -147,39 +183,6 @@ img {
 	position: relative;
 }
 
-/*** Стили для форм ***/
-.form-style {
-	font-family: "Roboto", "Arial", sans-serif;
-	font-size: 16px;
-	line-height: 24px;	
-	color: #323232;
-}
-
-.form-style input {
-	box-sizing: border-box;
-	height: 44px;
-	display: block;
-	padding: 10px 15px;
-	margin: 20px auto;
-	font-weight: 400;
-	border: 1px solid #c7c6c5;
-	border-radius: 5px;
-	font-family: "Roboto", "Arial", sans-serif;
-	font-size: 16px;
-	line-height: 24px;	
-	color: #323232;
-
-}
-
-.form-style input:hover {
-	border: 2px solid #c7c6c5;
-}
-
-.form-style input:focus {
-	border: 2px solid #8fbdec;
-}
-
-/*** Поиск и выпадающие меню поиска ***/
 .user-block .search {
 	position: relative;
 	font-size: 0;
@@ -203,7 +206,7 @@ img {
 	background-position: -51px -10px;
 }
 
-/**** experemental ****/
+/*** Выпадающее меню поиска ***/
 .search-popup {
 	display: none;
 	position: absolute;
@@ -266,8 +269,6 @@ img {
 	text-decoration: underline;
 }
 
-/*** end experemental ****/
-
 .user-block .entry-menu {
 	position: relative;
 	padding-right: 16px;
@@ -297,7 +298,7 @@ img {
 }
 
 
-
+/*** Корзина и выпадающее меню ***/
 .user-block .cart {
 	position: relative;
 	padding-right: 34px;
@@ -511,7 +512,6 @@ a.vk-ico::before {
 }
 
 
-
 /*** Стиль кнопок ***/
 .btn {
 	display: inline-block;
@@ -543,7 +543,7 @@ a.vk-ico::before {
 
 /*** Основной контент (main) ***/
 	/*-- index.html (главная) --*/
-/*-Блок слайдер-*/
+		/*-Выпадающее меню каталог-*/
 .menu-catalog{
 	position: relative;
 }
@@ -630,6 +630,7 @@ a.vk-ico::before {
 	display: block;
 	z-index: 5;
 }
+
 
 .menu-catalog::after,
 .search-block::after,
@@ -840,7 +841,6 @@ body > input[type="radio"] {
 }
 
 /*-Блок Хит продаж-*/
-
 .best-icecream {
 	display: flex;
 	justify-content: space-between;
@@ -909,7 +909,6 @@ body > input[type="radio"] {
 }
 
 /*-Блок приимуществ-*/
-
 .features {
 	box-sizing: border-box;
 	display: flex;
@@ -970,7 +969,6 @@ body > input[type="radio"] {
 }
 
 /*-Блок- блог и подписка-*/
-
 .blog-subscribe {
 	display: flex;
 	justify-content: space-between;
@@ -1446,10 +1444,6 @@ body > input[type="radio"] {
 	opacity: 0.4;
 }
 
-
-
-/*end жирность*/
-
 .sorting-type {
 	min-width: 192px;
 }
@@ -1471,7 +1465,6 @@ body > input[type="radio"] {
 	margin-right: 18px;
 }
 
-
 .sorting-type:hover {
 	background-color: #ffffff;
 }
@@ -1479,9 +1472,6 @@ body > input[type="radio"] {
 .sorting-type:hover select {
 	color: #323232;	
 }
-
-
-/***end experemental***/
 
 /*Блок - каталог мароженного*/
 .catalog-icecream {
@@ -1699,7 +1689,6 @@ body > input[type="radio"] {
 	color: #999999;
 }
 
-/*Доделать форму*/
 .modal-feedback  input:focus + label,
 .modal-feedback  textarea:focus + label {
 	font-size: 11px;
@@ -1723,7 +1712,6 @@ body > input[type="radio"] {
 	border: 2px solid #8fbdec;
 }
 
-/**************************/
 .modal-feedback .btn-wrap {
 	text-align: right;
 	margin-bottom: 27px;
