@@ -548,6 +548,10 @@ a.vk-ico::before {
 	position: relative;
 }
 
+.main-menu li {
+	max-width: 175px
+}
+
 .sub-menu {
 	display: none;
 	position: absolute;
@@ -681,43 +685,43 @@ a.vk-ico::before {
 
 /********Поведение слайдера при переключении**********/
 /*Выбор фона сайта при переключении слайда */
-#slide-1:checked ~ .global-wrapper {
+.slide1-btn:checked ~ .global-wrapper {
 	background-color: #849d8f;
 }
 
-#slide-2:checked ~ .global-wrapper {
+.slide2-btn:checked ~ .global-wrapper {
 	background-color: #8996a6;
 }
 
-#slide-3:checked ~ .global-wrapper {
+.slide3-btn:checked ~ .global-wrapper {
 	background-color: #9d8b84;
 }
 
 /*Закрашиваем переключатель включенного слайда*/
-#slide-1:checked ~ .global-wrapper label[for="slide-1"]{
+.slide1-btn:checked ~ .global-wrapper label[for="slide-1"]{
 	background-color: #ffffff;
 }
 
-#slide-2:checked ~ .global-wrapper label[for="slide-2"]{
+.slide2-btn:checked ~ .global-wrapper label[for="slide-2"]{
 	background-color: #ffffff;
 }
 
-#slide-3:checked ~ .global-wrapper label[for="slide-3"]{
+.slide3-btn:checked ~ .global-wrapper label[for="slide-3"]{
 	background-color: #ffffff;
 }
 
 /*Отображение слайда и градиета при переключении слайда */
-#slide-1:checked ~ .global-wrapper .slide-1 {
+.slide1-btn:checked ~ .global-wrapper .slide-1 {
 	display: block;
 	background: radial-gradient(ellipse closest-side at center, #cdf4df, #849d8f);	
 }
 
-#slide-2:checked ~ .global-wrapper .slide-2 {
+.slide2-btn:checked ~ .global-wrapper .slide-2 {
 	display: block;
 	background: radial-gradient(ellipse closest-side at center, #cde1f2, #8996a6);	
 }
 
-#slide-3:checked ~ .global-wrapper .slide-3 {
+.slide3-btn:checked ~ .global-wrapper .slide-3 {
 	display: block;
 	background: radial-gradient(ellipse closest-side at center, #eed9d0, #9d8b84);	
 }
@@ -920,7 +924,7 @@ body > input[type="radio"] {
 
 .features h3 {
 	margin: 0;
-	width: 999px;
+	width: 1010px;
 	font-size: 24px;
 	line-height: 30px;
 	font-weight: 500;
