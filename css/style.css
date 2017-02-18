@@ -1713,6 +1713,7 @@ body > input[type="radio"] {
 	padding: 10px 15px;
 	resize: none;
 	border: 1px solid #c7c6c5;
+	border-radius: 5px;
 }
 
 .modal-feedback .field-wrap {
