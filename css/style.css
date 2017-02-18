@@ -83,8 +83,10 @@ img {
 
 /*** Шапка (header) ***/
 .main-header {
+	display: -ms-flexbox;
 	display: flex;
-	align-items: flex-start;
+	-ms-flex-align: start;
+	    align-items: flex-start;
 	padding-top: 7px;
 }
 
@@ -96,6 +98,7 @@ img {
 
 /*** Главное меню ***/
 .main-navigation .main-menu {
+	display: -ms-flexbox;
 	display: flex;
 	list-style: none;
 	padding: 0;
@@ -155,6 +158,7 @@ img {
 
 /*** Блок пользователя ***/
 .user-block {
+	display: -ms-flexbox;
 	display: flex;
 	position: relative;
 	padding: 16px;
@@ -332,12 +336,16 @@ img {
 
 /*** breadcrumbs  ***/
 .content-header {
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
-	align-items: flex-end;
+	-ms-flex-pack: justify;
+	    justify-content: space-between;
+	-ms-flex-align: end;
+	    align-items: flex-end;
 }
 
 .breadcrumbs-navigation {
+	display: -ms-flexbox;
 	display: flex;
 	list-style: none;
 	margin: 0;
@@ -375,8 +383,10 @@ img {
 
 /*** Подвал (footer) ***/
 .main-footer {
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
+	-ms-flex-pack: justify;
+	    justify-content: space-between;
 	padding-top: 19px;
 	padding-bottom: 26px;
 }
@@ -388,8 +398,10 @@ img {
 
 .footer-social,
 .footer-info {
+	display: -ms-flexbox;
 	display: flex;
-	align-items: center;
+	-ms-flex-align: center;
+	    align-items: center;
 }
 
 .footer-info {
@@ -793,8 +805,10 @@ body > input[type="radio"] {
 
 /*-Промо блок-*/
 .promo {
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
+	-ms-flex-pack: justify;
+	    justify-content: space-between;
 	margin-bottom: 40px;
 }
 
@@ -842,8 +856,10 @@ body > input[type="radio"] {
 
 /*-Блок Хит продаж-*/
 .best-icecream {
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
+	-ms-flex-pack: justify;
+	    justify-content: space-between;
 	margin-bottom: 38px;
 }
 
@@ -911,9 +927,12 @@ body > input[type="radio"] {
 /*-Блок приимуществ-*/
 .features {
 	box-sizing: border-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-wrap: wrap;
-	align-content: space-between;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-ms-flex-line-pack: justify;
+	    align-content: space-between;
 	padding: 24px 20px;
 	margin-bottom: 40px;
 	background: #ecdfc3 url("../img/wafer-bg.jpg") no-repeat;
@@ -970,8 +989,10 @@ body > input[type="radio"] {
 
 /*-Блок- блог и подписка-*/
 .blog-subscribe {
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
+	-ms-flex-pack: justify;
+	    justify-content: space-between;
 	margin-bottom: 40px;
 }
 
@@ -1118,7 +1139,8 @@ body > input[type="radio"] {
 
 .inner-shedule-phone {
 	width: 267px;
-	align-self: flex-start;
+	-ms-flex-item-align: start;
+	    align-self: flex-start;
 	text-align: right;
 	color: #ffffff;
 	font-weight: 700;	
@@ -1210,8 +1232,10 @@ body > input[type="radio"] {
 
 /*Блок сортировки*/
 .sorting form {
+	display: -ms-flexbox;
 	display: flex;
-	flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 }
 
 .sorting-type {
@@ -1475,9 +1499,12 @@ body > input[type="radio"] {
 
 /*Блок - каталог мароженного*/
 .catalog-icecream {
+	display: -ms-flexbox;
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-ms-flex-pack: justify;
+	    justify-content: space-between;
 	margin-bottom: 45px;
 }
 
