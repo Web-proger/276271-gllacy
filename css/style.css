@@ -129,6 +129,11 @@ img {
     box-shadow: inset 0 2px 1px;
 }
 
+.main-navigation a:hover::before,
+.main-navigation a:active::before {
+    content: none;
+}
+
 .main-navigation .menu-active:hover {
     background: #d07058;
     color: #ffffff;
@@ -155,6 +160,10 @@ img {
 .menu-active {
     background-color: #d07058;
     border-radius: 13px;
+}
+
+.main-navigation .menu-active:before {
+    content: none;
 }
 
 /*** Блок пользователя ***/
@@ -379,8 +388,16 @@ img {
     text-decoration: none;
 }
 
+.breadcrumbs-navigation a:hover {
+    border-bottom-color: #ffbc9e;    
+}
+
 .breadcrumbs-navigation .current-page  {
     border-bottom-color: transparent;
+}
+
+.breadcrumbs-navigation .current-page:hover {
+    border-color: transparent;
 }
 
 /*** Подвал (footer) ***/
@@ -426,6 +443,11 @@ img {
     height: 38px;
     border: 3px solid #c2cec7;
     border-radius: 19px;
+}
+
+.link-hover a:hover,
+.link-activ a:active {
+    border-color: #ffbc9e
 }
 
 .footer-social a:last-child {
@@ -1128,6 +1150,10 @@ body > input[type="radio"] {
     /*-- catalog.html (Каталог) --*/
 .inner-page .sub-menu-active-page {
     background-color: #d07058;
+}
+
+.inner-page .sub-menu-active-page a {
+    color: #ffffff;
 }
 
 .inner-page .sub-menu-active-page:hover {
