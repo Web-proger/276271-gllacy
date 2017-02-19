@@ -9,20 +9,6 @@ body {
     background-color: #849d8f;
 }
 
-h1 {
-    font-size: 35px;
-    line-height: 41px;
-    font-weight: 700;
-    color: #ffffff;
-}
-
-h2 {
-    font-size: 24px;
-    line-height: 28px;
-    color: #323232;
-    font-weight: 700;
-}
-
 /* Взаимодействие со ссылками */
 .link-hover a[href]:hover {
     color: #ffbc9e;
@@ -777,7 +763,7 @@ a.vk-ico::before {
     left: 1px;
 }
 
-body > input[type="radio"] {
+body > .slider-switch {
     display: none;
 }
 
@@ -1167,6 +1153,10 @@ body > input[type="radio"] {
 .icecream-type {
     margin-top: 2px;
     margin-bottom: 49px;
+    font-size: 35px;
+    line-height: 41px;
+    font-weight: 700;
+    color: #ffffff;
 }
 
 .inner-shedule-phone {
