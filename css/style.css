@@ -1127,7 +1127,7 @@ body > .slider-switch {
     padding-top: 5px;
 }
 
-.map-contacts button {
+.map-contacts .btn {
     display: block;
     margin: 0 auto;
     margin-top: 26px;
