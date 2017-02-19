@@ -1624,17 +1624,31 @@ body > input[type="radio"] {
     display: inline-block;
     width: 26px;
     height: 26px;
-    margin-right: 1px;
+    box-sizing: border-box;
+    padding-top: 4px;
+    margin-right: 3px;
     border-radius: 14px;
     text-decoration: none;
     color: #ffffff;
-    box-sizing: border-box;
-    padding-top: 4px;
     text-align: center;
     vertical-align: top;
     font-size: 16px;
     line-height: 18px;
     font-weight: 500;
+}
+
+.pagination a:first-child {
+    margin-right: 11px;
+    background: url("../img/prev-page.png") no-repeat;
+    background-position: center center;
+    font-size: 0;
+}
+
+.pagination a:last-child {
+    margin-right: -5px;
+    background: url("../img/next-page.png") no-repeat;
+    background-position: center center;
+    font-size: 0;
 }
 
 .pagination a:hover {
