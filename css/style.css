@@ -87,6 +87,8 @@ img {
 .main-navigation .main-menu {
     display: -ms-flexbox;
         display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     list-style: none;
     padding: 0;
 }
@@ -405,6 +407,8 @@ img {
 .footer-info {
     display: -ms-flexbox;
         display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -ms-flex-align: center;
         align-items: center;
 }
@@ -414,7 +418,7 @@ img {
 }
 
 .footer-social {
-    width: 185px;
+    min-width: 185px;
     margin-top: 8px;
     font-size: 0;
 }
@@ -509,7 +513,8 @@ a.vk-ico::before {
     left: -20px;
     width: 15px;
     height: 13px;
-    background: url("../img/heart-ico.png") no-repeat;
+    background: url("../img/sprite-ico.png") no-repeat;
+    background-position: -68px -200px;   
 }
 
 .footer-info-left {
@@ -829,20 +834,22 @@ body > .slider-switch {
     position: relative;
     box-sizing: border-box;
     width: 560px;
-    padding: 22px;
+    padding-right: 22px;
     padding-top: 15px;
     padding-left: 20px;
+    padding-bottom: 70px;
     border-radius: 15px;
+    overflow: hidden;
 }
 
 .promo-left {
     min-height: 229px;
-    background: #dc143c url("../img/raspberries-bg.jpg") no-repeat;
+    background: #dc143c url("../img/raspberries-bg.png") repeat-y;
 }
 
 .promo-right {
     min-height: 229px;
-    background: #d2691e url("../img/chocolate-bg.jpg") no-repeat;
+    background: #d2691e url("../img/chocolate-bg.png") repeat-y;
 }
 
 .promo .btn {
@@ -871,15 +878,17 @@ body > .slider-switch {
 .best-icecream {
     display: -ms-flexbox;
         display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -ms-flex-pack: justify;
         justify-content: space-between;
-    margin-bottom: 38px;
 }
 
 .best-icecream-item {
     position: relative;
     width: 267px;
     z-index: 5;
+    margin-bottom: 38px;
 }
 
 .best-icecream p {
@@ -1018,7 +1027,7 @@ body > .slider-switch {
 .subscribe {
     box-sizing: border-box;
     width: 560px;
-    height: 220px;
+    min-height: 220px;
     border-radius: 15px;
 }
 
@@ -1655,15 +1664,15 @@ body > .slider-switch {
 
 .pagination a:first-child {
     margin-right: 11px;
-    background: url("../img/prev-page.png") no-repeat;
-    background-position: center center;
+    background: url("../img/sprite-ico.png") no-repeat;
+    background-position: -112px -195px;
     font-size: 0;
 }
 
 .pagination a:last-child {
     margin-right: -5px;
-    background: url("../img/next-page.png") no-repeat;
-    background-position: center center;
+    background: url("../img/sprite-ico.png") no-repeat;
+    background-position: -162px -195px;
     font-size: 0;
 }
 
