@@ -57,7 +57,6 @@ img {
     line-height: 24px;  
     font-weight: 400;
     color: #323232;
-
 }
 
 .form-style input:hover {
@@ -150,7 +149,7 @@ img {
     border-radius: 13px;
 }
 
-.main-navigation .menu-active:before {
+.main-navigation .menu-active::before {
     content: none;
 }
 
@@ -482,7 +481,7 @@ a.vk-ico::before {
     opacity: 1;
 }
 
-.footer-social a:active::before{
+.footer-social a:active::before {
     opacity: 0.8;
     box-shadow: inset 0 2px 1px #888888;
 }
@@ -572,7 +571,7 @@ a.vk-ico::before {
 /*** Основной контент (main) ***/
     /*-- index.html (главная) --*/
         /*-Выпадающее меню каталог-*/
-.menu-catalog{
+.menu-catalog {
     position: relative;
 }
 
@@ -1188,7 +1187,8 @@ body > .slider-switch {
     box-sizing: border-box;
     width: 540px;
     padding: 7px 15px;
-    padding-bottom: 25px;
+    padding-top: 18px;
+    padding-bottom: 22px;
     background-color: #f8f7f4;
     border-radius: 5px; 
     box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
@@ -1219,16 +1219,16 @@ body > .slider-switch {
 .goods-carts hr {
     display: block;
     margin-top: 2px;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
 }
 
 .goods-carts-line td {
     padding-top: 10px;  
-    padding-bottom: 10px;
-    vertical-align: middle;
+    padding-bottom: 13px;
+    vertical-align: top;
 }
 
-.view-full-cart:hover .goods-carts{
+.view-full-cart:hover .goods-carts {
     display: block;
 }
 
@@ -1239,6 +1239,7 @@ body > .slider-switch {
 
 .goods-carts-line td:nth-child(2) {
     width: 50px;
+    padding-top: 0;
     text-align: center;
 }
 
@@ -1262,6 +1263,8 @@ body > .slider-switch {
     font-size: 18px;
     line-height: 24px;
     font-weight: 700;
+    padding: 9px 14px;
+    border-radius: 18px;
 }
 
 .goods-carts .block-total-price {
@@ -1774,7 +1777,7 @@ body > .slider-switch {
 .modal-feedback  textarea:focus + label {
     font-size: 11px;
     line-height: 13px;
-    font-weight: 400px;
+    font-weight: 400;
     color: #5b9ddf;
     animation: move 0.5s;
     animation-fill-mode: forwards;
