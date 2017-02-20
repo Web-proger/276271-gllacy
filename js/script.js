@@ -48,7 +48,7 @@ window.addEventListener("keydown", function(event){
 
 /** Проверка, введены ли данные в форму обратной связи **/
 feedbackForm.addEventListener("submit", function(event){
-    if (!feedbackName.value || !feedbackEmail.value || !feedbackText.value) {
+    if (!feedbackName.value || !feedbackEmail.value || !feedbackText.value){
         event.preventDefault();
         feedback.classList.remove("feedback-error");
         console.log("Не все данные введены");
