@@ -1101,6 +1101,7 @@ body > .slider-switch {
     margin-left: -27px;
     width: 1200px;
     height: 430px;
+    background: url("../img/map.jpg") no-repeat;
 }
 
 .map-contacts {
