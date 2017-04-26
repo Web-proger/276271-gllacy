@@ -61,6 +61,17 @@ feedbackForm.addEventListener("submit", function(event){
     }
 })
 
+function slideSwitch() {
+    var slide1 = document.getElementById("slide-1");
+    var slide2 = document.getElementById("slide-2");
+    var slide3 = document.getElementById("slide-3");
+    for 
+        if (slide1.hasAttribute("checked")) {
+
+        }
+}
+
+
 /** Проверка, введён ли login **/
 /*if (feedbackName.value) {
     feedbackEmail.focus();
